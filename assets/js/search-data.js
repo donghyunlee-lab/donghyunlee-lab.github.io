@@ -190,6 +190,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-07-21-recruit-undergrad/";
+            },},{id: "news-paper-heterogeneous-transfer-learning-for-infectious-disease-forecasting-published-in-eswa-if-9-4-top-5",
+          title: '📜 [Paper] Heterogeneous Transfer Learning for Infectious Disease Forecasting published in ESWA (IF=9.4,...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-07-22-paper-eswa-heterogeneous-tl/";
             },},{id: "projects-ai-for-algal-bloom-forecasting",
           title: 'AI for Algal Bloom Forecasting',
           description: "Developing a Trustworthy AI model to predict harmful algal blooms (HABs).",
