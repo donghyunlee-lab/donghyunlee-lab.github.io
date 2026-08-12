@@ -195,6 +195,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-07-22-paper-eswa-heterogeneous-tl/";
+            },},{id: "news-paper-edge-case-based-ai-reliability-validation-published-in-scientific-reports-if-4-9-top-14-6-with-ktl",
+          title: '📜 [Paper] Edge-Case-Based AI Reliability Validation published in Scientific Reports (IF=4.9, Top 14.6%,...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-08-12-paper-sr-ai-reliability-ktl/";
             },},{id: "projects-ai-for-algal-bloom-forecasting",
           title: 'AI for Algal Bloom Forecasting',
           description: "Developing a Trustworthy AI model to predict harmful algal blooms (HABs).",
