@@ -200,6 +200,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-08-12-paper-sr-ai-reliability-ktl/";
+            },},{id: "news-news-welcome-new-members-amp-recruitment-update",
+          title: '📢 [News] Welcome New Members &amp;amp; Recruitment Update',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-08-18-welcome-new/";
             },},{id: "projects-ai-for-algal-bloom-forecasting",
           title: 'AI for Algal Bloom Forecasting',
           description: "Developing a Trustworthy AI model to predict harmful algal blooms (HABs).",
