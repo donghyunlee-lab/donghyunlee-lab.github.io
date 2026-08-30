@@ -1,0 +1,71 @@
+/*******************************************************************************
+ * Dark-mode fixes for Bootstrap / MDB light-theme utilities
+ *
+ * Bootstrap and MDB hardcode light-theme colors: white .list-group-item,
+ * #e0e0e0 .bg-light, near-black .text-dark and .btn-outline-dark. These ignore
+ * al-folio's theme variables, so in dark mode they render as solid white
+ * blocks or invisible text (e.g. the project list and the "Collaboration
+ * Inquiry" box on /projects/, the repo buttons on /code/).
+ *
+ * Everything here is scoped to html[data-theme="dark"], so light mode is
+ * untouched. Loaded last in main.scss to win over bootstrap.min.css / mdb.min.css.
+ ******************************************************************************/
+
+html[data-theme="dark"] {
+  // Project list on /projects/ — Bootstrap renders these solid white
+  .list-group-item {
+    background-color: var(--global-card-bg-color);
+    color: var(--global-text-color);
+    border-color: var(--global-divider-color);
+  }
+
+  .list-group-item-action {
+    color: var(--global-text-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--global-bg-color);
+      color: var(--global-text-color);
+    }
+  }
+
+  // Callout boxes such as "Collaboration Inquiry" — light bg left the
+  // inherited light body text unreadable
+  .bg-light {
+    background-color: var(--global-card-bg-color) !important;
+    color: var(--global-text-color) !important;
+  }
+
+  .border,
+  .border-top,
+  .border-bottom,
+  .border-start,
+  .border-end {
+    border-color: var(--global-divider-color) !important;
+  }
+
+  // Utilities that force near-black text on a dark background
+  .text-dark {
+    color: var(--global-text-color) !important;
+  }
+
+  .text-muted {
+    color: var(--global-text-color-light) !important;
+  }
+
+  // MDB declares .btn-outline-dark colors with !important, so these must be
+  // !important too — specificity alone does not win against it.
+  .btn-outline-dark {
+    color: var(--global-text-color) !important;
+    border-color: var(--global-divider-color) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--global-text-color) !important;
+      border-color: var(--global-text-color) !important;
+      color: var(--global-bg-color) !important;
+    }
+  }
+}
