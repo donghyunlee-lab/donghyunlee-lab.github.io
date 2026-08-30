@@ -35,6 +35,72 @@ nav_order: 6
 
 ### Hankuk University of Foreign Studies, Seoul, South Korea (2025 - )
 
+#### 2026 Fall
+
+- **[M04103201] Fundamentals of Social Data Programming**
+  An introduction to Python for students with no programming background. Beyond syntax, the course trains students to read, question, and repair AI-generated code — the literacy that matters most once a model writes the first draft.
+
+{% details Course Details %}
+
+**Course Focus**
+
+- Step-by-step coverage of numbers and strings, lists and tuples, dictionaries and sets, operators, conditionals, loops, functions, file I/O, classes, modules, and packages
+- Every concept practiced as a cycle: run it, modify it, diagnose the error, explain the fix
+- Google Colab for the first half; VS Code from week 12 onward for multi-file programs
+
+**Learning Objectives**
+
+- Represent social data with appropriate types and structures, and implement processing logic with conditionals, loops, and functions
+- Read execution flow and error messages to diagnose boundary, type, index, file path, and exception problems
+- Write small programs that load, classify, aggregate, and save anonymized CSV and text data
+- Record where AI assistance was used and how it was verified, and explain results with data ethics and reproducibility in mind
+
+{% enddetails %}
+
+- **[M04112201] Technology Development Research Project**
+  A project-based course in which students complete one full cycle of technology development research — problem definition, implementation, verification, deployment, and operation — with a coding agent (Claude Code) as a collaborator. The emphasis is not on tool usage but on designing specifications, context, permissions, verification, and reproducible records.
+
+{% details Course Details %}
+
+**Project Cycle**
+
+- Translate a technical problem into testable requirements and development hypotheses from a stakeholder and user perspective
+- Design the agent loop, permission boundaries, project context, planning, and verification procedures to fit the project
+- Build a working service on TypeScript, Firestore, and Firebase Hosting, leaving evidence of tests, security review, and deployment
+- Automate repeated checks into a personal harness — skills, hooks, scripts, subagents, and external tool connections — with explicit boundaries for human intervention
+
+**Learning Objectives**
+
+- Fix success metrics, scope, and a definition of done before writing code
+- Verify an agent's proposed changes through failure reproduction, logs, and unit and integration tests
+- Review code, dependencies, secrets handling, and input validation for quality and security
+- Justify technical decisions from development logs and experimental evidence, presenting a deployed service, an automation harness, and a final research report
+
+{% enddetails %}
+
+- **[M04111101] Industrial Data Visualization**
+  Select the chart that fits the analytical goal — comparison, trend, distribution, or relationship — and turn an AI-generated draft into a defensible visualization. Students build static charts with Matplotlib and Seaborn, interactive charts with Plotly, and integrate them into a deployed Streamlit dashboard.
+
+{% details Course Details %}
+
+**Chart Literacy**
+
+- Diagnose how truncated axes, selective ranges, wrong aggregation, and misleading color or labels distort a message
+- Control Figure and Axes explicitly rather than accepting library defaults
+- Critique and redesign AI-drafted charts on the basis of evidence rather than decoration
+- Apply accessibility rules: never encode a category by color alone, keep sufficient contrast, and keep labels readable
+
+**Learning Objectives**
+
+- Choose chart types that match both the data and the intended claim
+- Build static charts with Matplotlib and Seaborn, controlling color, axes, annotation, and legends
+- Design interactive charts in Plotly and combine multiple charts and widgets into a Streamlit dashboard
+- Deliver a one-sentence claim supported by data evidence and a visual narrative, published to the web
+
+{% enddetails %}
+
+---
+
 #### 2026 Spring
 
 - **[M04107101] Object-Oriented Programming**
