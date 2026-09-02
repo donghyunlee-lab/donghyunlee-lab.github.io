@@ -215,6 +215,32 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+.members-group-intro {
+  margin-bottom: 2rem;
+
+  figure {
+    margin: 0;
+  }
+
+  .members-group-photo {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: 50% 60%;
+  }
+}
+
+.members-list-heading {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 575px) {
+  .members-group-intro .members-group-photo {
+    aspect-ratio: 4 / 3;
+    object-position: center;
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;

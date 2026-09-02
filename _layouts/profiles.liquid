@@ -3,6 +3,25 @@ layout: page
 ---
 <div class="post">
   <article>
+    {% if page.group_photo and page.group_photo.image %}
+      {% assign group_photo_path = page.group_photo.image | prepend: 'assets/img/' %}
+      <div class="members-group-intro">
+        {%
+          include figure.liquid
+          loading="eager"
+          path=group_photo_path
+          class="img-fluid z-depth-1 rounded members-group-photo"
+          sizes="(min-width: 930px) 900px, 95vw"
+          alt=page.group_photo.alt
+          caption=page.group_photo.caption
+        %}
+      </div>
+    {% endif %}
+
+    {% if page.profiles_heading %}
+      <h2 class="members-list-heading">{{ page.profiles_heading }}</h2>
+    {% endif %}
+
     {% if page.profiles %}
       {% for profile in page.profiles %}
         <hr>

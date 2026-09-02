@@ -5,6 +5,12 @@ title: Members
 description: Members of the Donghyun Lee AI Group
 nav: false
 
+group_photo:
+  image: lab-meeting-2026-09.jpg
+  alt: Eight members of the Donghyun Lee AI Group gathered around a table during a lab meeting
+  caption: Donghyun Lee AI Group at a weekly lab meeting.
+profiles_heading: Current Members
+
 profiles:
   - align: right
     image: pic_hsj.jpg
