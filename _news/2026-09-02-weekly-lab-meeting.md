@@ -3,6 +3,7 @@ layout: post
 title: 📢 [News] Weekly Lab Meeting
 date: 2026-09-02 00:00:00
 inline: false
+img: assets/img/lab-meeting-2026-09.jpg
 ---
 
 We held our weekly research meeting — reviewing papers together and sharing progress across our two research tracks, **Computational Social Science** and **Trustworthy AI**. Let's keep up the great work, everyone!
