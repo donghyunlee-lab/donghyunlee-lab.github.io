@@ -190,6 +190,13 @@
   ],
   "publications": [
     {
+      "name": "Uncovering reliability blind spots in transportation AI: An edge-case-based validation approach for transportation systems",
+      "publisher": "Scientific Reports, in press (published online Aug. 1, 2026)",
+      "releaseDate": "2026",
+      "url": "https://doi.org/10.1038/s41598-026-62679-w",
+      "summary": "J. Kim, D. Lee* (2026). (SCIE, IF 4.9 / JCR Top 14.6%)"
+    },
+    {
       "name": "Heterogeneous transfer learning for robust infectious disease forecasting: A data-centric approach",
       "publisher": "Expert Systems with Applications, 332, 133728",
       "releaseDate": "2026",
