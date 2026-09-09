@@ -59,6 +59,7 @@ nav_order: 6
 
 - **[M04112201] Technology Development Research Project**
   A project-based course in which students complete one full cycle of technology development research — problem definition, implementation, verification, deployment, and operation — with a coding agent (Claude Code) as a collaborator. The emphasis is not on tool usage but on designing specifications, context, permissions, verification, and reproducible records.
+  **Course Page:** [donghyunlee-lab.github.io/tech-development-project](https://donghyunlee-lab.github.io/tech-development-project/)
 
 {% details Course Details %}
 
