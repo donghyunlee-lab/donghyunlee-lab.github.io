@@ -58,23 +58,32 @@ nav_order: 6
 {% enddetails %}
 
 - **[M04112201] Technology Development Research Project**
-  A project-based course in which students complete one full cycle of technology development research — problem definition, implementation, verification, deployment, and operation — with a coding agent (Claude Code) as a collaborator. The emphasis is not on tool usage but on designing specifications, context, permissions, verification, and reproducible records.
+  A studio course in which each student defines a problem, builds a working service with a coding agent (Claude Code), verifies it, and deploys it. There are no exams: the semester produces a personal homepage and one deployed project, and every student is assessed on whether they can read, run, and explain the changes the agent proposes.
+  **Course Page:** [donghyunlee-lab.github.io/tech-development-project](https://donghyunlee-lab.github.io/tech-development-project/)
 
 {% details Course Details %}
 
-**Project Cycle**
+**Semester Structure**
 
-- Translate a technical problem into testable requirements and development hypotheses from a stakeholder and user perspective
-- Design the agent loop, permission boundaries, project context, planning, and verification procedures to fit the project
-- Build a working service on TypeScript, Firestore, and Firebase Hosting, leaving evidence of tests, security review, and deployment
-- Automate repeated checks into a personal harness — skills, hooks, scripts, subagents, and external tool connections — with explicit boundaries for human intervention
+- Weeks 2–5: build and deploy a personal homepage — information structure, HTML and CSS, Git, README, and a public URL
+- Weeks 4–8: choose one user and one problem, fix the core flows and the definition of done, and reach a working mid-term MVP
+- Weeks 9–15: user testing, quality and security review, deployment, documentation, and a final demo with a retrospective
+- Each 150-minute session spends 85 minutes on development with rotating coaching, and closes with a three-line record: what was done, what was verified, what comes next
+
+**Project Tracks**
+
+- Public and social data explorers — youth employment, population change, commuting time and cost
+- Campus and community information services — scholarships, exchange-student life, campus facilities and events
+- Research support tools — survey CSV checkers, interview tagging boards, literature evidence cards
+- Comparison and simulation tools — commuting alternatives, event budgets, time-use scenarios
 
 **Learning Objectives**
 
-- Fix success metrics, scope, and a definition of done before writing code
-- Verify an agent's proposed changes through failure reproduction, logs, and unit and integration tests
-- Review code, dependencies, secrets handling, and input validation for quality and security
-- Justify technical decisions from development logs and experimental evidence, presenting a deployed service, an automation harness, and a final research report
+- Fix the user, the problem, the core flows, and a definition of done before writing code
+- Write requests that carry the goal, the context, and the completion criteria, then read and run the agent's changes instead of accepting them
+- Diagnose failures through reproduction, boundary conditions, and logs, and confirm each fix under the conditions that exposed it
+- Handle data sources, personal information, and secrets responsibly, and gather feedback from at least three real users
+- Deploy a reproducible service with a README and explain the design decisions, the verification evidence, and the remaining limits
 
 {% enddetails %}
 
