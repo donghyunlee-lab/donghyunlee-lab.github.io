@@ -622,6 +622,7 @@ jekyll_get_json:
 jsonresume:
   - basics
   - work
+  - service
   - education
   - publications
   - projects

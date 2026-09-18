@@ -49,6 +49,35 @@
       "highlights": []
     },
     {
+      "name": "Korea Environmental Institute",
+      "position": "Research Fellow, Big Data Research Team",
+      "url": "",
+      "startDate": "2016-07-01",
+      "endDate": "2017-02-28",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "service": [
+    {
+      "name": "National Sustainable Development Research Center (국가지속가능발전연구센터)",
+      "position": "Member, Pre-Review Committee for the K-SDGs Implementation Plan",
+      "url": "",
+      "startDate": "2026-09-01",
+      "endDate": "2028-08-31",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Korea Environmental Policy and Administration Society (한국환경정책학회, KEPAS)",
+      "position": "Chair, AI and Digital Committee (AI디지털위원장)",
+      "url": "",
+      "startDate": "2026-08-31",
+      "endDate": "2028-02-28",
+      "summary": "",
+      "highlights": []
+    },
+    {
       "name": "Journal of Innovation & Knowledge (SSCI, IF 14.0 / JCR Top 0.5%)",
       "position": "Editorial Board Member",
       "url": "",
@@ -67,7 +96,7 @@
       "highlights": []
     },
     {
-      "name": "Korea Environmental Policy and Administration Society (KEPAS)",
+      "name": "Korea Environmental Policy and Administration Society (한국환경정책학회, KEPAS)",
       "position": "Director (Board Member)",
       "url": "",
       "startDate": "2026-06-01",
@@ -85,20 +114,11 @@
       "highlights": []
     },
     {
-      "name": "Committee from Ministry of Environment, Environmental Economics Division",
-      "position": "Committee Member",
+      "name": "Ministry of Environment (환경부)",
+      "position": "Committee Member, Central Environmental Policy Committee, Environmental Economics Division",
       "url": "",
       "startDate": "2022-07-01",
       "endDate": "2024-07-31",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "name": "Korea Environmental Institute",
-      "position": "Research Fellow, Big Data Research Team",
-      "url": "",
-      "startDate": "2016-07-01",
-      "endDate": "2017-02-28",
       "summary": "",
       "highlights": []
     }
@@ -114,7 +134,9 @@
       "startDate": "2005-02",
       "endDate": "2009-08",
       "score": "",
-      "courses": ["IT Business minor"]
+      "courses": [
+        "IT Business minor"
+      ]
     },
     {
       "institution": "Korea Advanced Institute of Science and Technology (KAIST), College of Business",
@@ -143,6 +165,13 @@
     }
   ],
   "awards": [
+    {
+      "title": "Outstanding Abstract Award (우수초록상), 2026 Fall Conference of the Korean Society for Zoonoses",
+      "date": "2026",
+      "awarder": "Korean Society for Zoonoses (대한인수공통감염병학회)",
+      "url": "",
+      "summary": "H. Jeon and D. Lee (corresponding author), “Forecasting country-level outbreaks of highly pathogenic avian influenza from international notification data.”"
+    },
     {
       "title": "Environmental Data Analysis Contest, Development of Multimodal LLM Interactive AI Specialized in Environmental Research, President’s Award of the Korea Environment Institute",
       "date": "2024",
@@ -342,19 +371,38 @@
       "name": "Research & Methodology",
       "level": "Expert",
       "icon": "fa-solid fa-calculator",
-      "keywords": ["Econometrics", "Technology Management", "Discrete Choice Model", "CVM", "Hazard Model"]
+      "keywords": [
+        "Econometrics",
+        "Technology Management",
+        "Discrete Choice Model",
+        "CVM",
+        "Hazard Model"
+      ]
     },
     {
       "name": "Machine Learning & AI",
       "level": "Expert",
       "icon": "fa-solid fa-brain",
-      "keywords": ["Trustworthy AI", "LLM (sLLM, LangChain)", "PyTorch", "Tensorflow", "ML"]
+      "keywords": [
+        "Trustworthy AI",
+        "LLM (sLLM, LangChain)",
+        "PyTorch",
+        "Tensorflow",
+        "ML"
+      ]
     },
     {
       "name": "Data Analysis & Programming",
       "level": "Expert",
       "icon": "fa-solid fa-laptop-code",
-      "keywords": ["Programming (Python, R, Java, C)", "SQL", "STATA", "SPSS", "Tableau (BI, Visualization)", "QGIS"]
+      "keywords": [
+        "Programming (Python, R, Java, C)",
+        "SQL",
+        "STATA",
+        "SPSS",
+        "Tableau (BI, Visualization)",
+        "QGIS"
+      ]
     },
     {
       "name": "System Architecture & Development",
