@@ -22,21 +22,21 @@ Our thanks to the society's organizers and to the animal health authorities, phy
 
 <div class="row mt-3">
     <div class="col-sm text-center">
-        {% include figure.liquid loading="eager" path="assets/img/posts/post_2026-09-11-award.jpg" title="Award ceremony" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/posts/post_2026-09-11-award.jpg" title="Award ceremony" class="img-fluid rounded z-depth-1" max-width="300px" zoomable=true %}
         <div class="caption">Award ceremony</div>
     </div>
     <div class="col-sm text-center">
-        {% include figure.liquid loading="eager" path="assets/img/posts/post_2026-09-11-certificate.png" title="Outstanding Abstract Award certificate" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/posts/post_2026-09-11-certificate.png" title="Outstanding Abstract Award certificate" class="img-fluid rounded z-depth-1" max-width="300px" zoomable=true %}
         <div class="caption">Award certificate</div>
     </div>
 </div>
 <div class="row mt-3">
     <div class="col-sm text-center">
-        {% include figure.liquid loading="eager" path="assets/img/posts/post_2026-09-11-talk.jpg" title="Oral presentation" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/posts/post_2026-09-11-talk.jpg" title="Oral presentation" class="img-fluid rounded z-depth-1" max-width="300px" zoomable=true %}
         <div class="caption">Oral presentation (Session 3)</div>
     </div>
     <div class="col-sm text-center">
-        {% include figure.liquid loading="eager" path="assets/img/posts/post_2026-09-11-session.jpg" title="Session view" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/posts/post_2026-09-11-session.jpg" title="Session view" class="img-fluid rounded z-depth-1" max-width="300px" zoomable=true %}
         <div class="caption">Session view with the title slide</div>
     </div>
 </div>
