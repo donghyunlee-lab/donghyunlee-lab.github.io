@@ -1,6 +1,6 @@
 **Interests:** Agentic AI, MLOps, Trustworthy AI for Avian Influenza & Environmental Disasters
 
-M.S. Student, Department of AI Convergence. Presented five papers at KSZ, KEEA, KOTIS, and TMES (2024–2025).
+M.S. Student, Department of AI Convergence. Presented six papers at KSZ, KEEA, KOTIS, and TMES.
 
 **Publications**
 
