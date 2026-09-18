@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 📢 [News] Prof. Donghyun Lee Appointed as KEPAS AI & Digital Committee Chair and K-SDGs Pre-Review Committee Member
-date: 2026-08-31 00:00:00
+date: 2026-09-18 00:00:00
 inline: false
 ---
 
