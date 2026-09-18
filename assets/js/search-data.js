@@ -205,11 +205,6 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-08-18-welcome-new/";
-            },},{id: "news-news-prof-donghyun-lee-appointed-as-kepas-ai-amp-digital-committee-chair-and-k-sdgs-pre-review-committee-member",
-          title: '📢 [News] Prof. Donghyun Lee Appointed as KEPAS AI &amp;amp; Digital Committee Chair...',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/2026-08-31-prof-lee-kepas-chair-ksdgs-reviewer/";
             },},{id: "news-news-weekly-lab-meeting",
           title: '📢 [News] Weekly Lab Meeting',
           description: "",
@@ -220,6 +215,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-09-11-award-ksz-outstanding-abstract/";
+            },},{id: "news-news-prof-donghyun-lee-appointed-as-kepas-ai-amp-digital-committee-chair-and-k-sdgs-pre-review-committee-member",
+          title: '📢 [News] Prof. Donghyun Lee Appointed as KEPAS AI &amp;amp; Digital Committee Chair...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-09-18-prof-lee-kepas-chair-ksdgs-reviewer/";
             },},{id: "projects-ai-for-algal-bloom-forecasting",
           title: 'AI for Algal Bloom Forecasting',
           description: "Developing a Trustworthy AI model to predict harmful algal blooms (HABs).",
