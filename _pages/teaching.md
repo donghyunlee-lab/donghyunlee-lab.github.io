@@ -7,33 +7,14 @@ nav: true
 nav_order: 6
 ---
 
-## 📚 Course Pages
-
-Detailed pages (schedule, grading, and student projects) for current courses.
-
-{% include courses.liquid %}
-
-<br>
-
 ## 💻 Online Courses (KOCW)
 
 ---
 
-- **Python Programming**
-  Covers the fundamentals of Python programming for data analysis, including Python installation, variables, operators, conditionals, loops, functions, and libraries like Numpy and Pandas. (KOCW)
-  **Lecture Link:** [http://kocw.net/home/cview.do?cid=3aeee0aa8ad8e840](http://kocw.net/home/cview.do?cid=3aeee0aa8ad8e840)
-
-- **Python Programming 2**
-  Focused on object-oriented programming and fundamental Python concepts, this lecture is tailored for learners seeking a deeper understanding of Python programming essentials. (KOCW)
-  **Lecture Link:** [http://www.kocw.net/home/search/kemView.do?kemId=1368521](http://www.kocw.net/home/search/kemView.do?kemId=1368521)
-
-- **R Programming (Big Data Analysis)**
-  Focuses on the basics of data analysis using R programming, covering R installation, data preprocessing, visualization, descriptive statistics, regression analysis, and more. (KOCW)
-  **Lecture Link:** [http://www.kocw.net/home/search/kemView.do?kemId=1335286](http://www.kocw.net/home/search/kemView.do?kemId=1335286)
-
-- **JAVA Programming (Fundamentals of Programming)**
-  This lecture uses Java to teach the fundamental concepts and principles of programming. It covers core programming elements such as variables, operators, conditionals, and loops, as well as an introduction to object-oriented programming fundamentals. (KOCW)
-  **Lecture Link:** [http://www.kocw.net/home/search/kemView.do?kemId=1351017](httpS://www.kocw.net/home/search/kemView.do?kemId=1351017)
+- **[Python Programming](http://kocw.net/home/cview.do?cid=3aeee0aa8ad8e840)** — Python fundamentals for data analysis: variables, operators, conditionals, loops, functions, NumPy and Pandas.
+- **[Python Programming 2](http://www.kocw.net/home/search/kemView.do?kemId=1368521)** — Object-oriented programming and core Python concepts.
+- **[R Programming (Big Data Analysis)](http://www.kocw.net/home/search/kemView.do?kemId=1335286)** — R for data analysis: preprocessing, visualization, descriptive statistics, and regression.
+- **[JAVA Programming (Fundamentals of Programming)](http://www.kocw.net/home/search/kemView.do?kemId=1351017)** — Core programming concepts in Java, with an introduction to object-oriented programming.
 
 <br>
 
@@ -65,9 +46,8 @@ Detailed pages (schedule, grading, and student projects) for current courses.
 
 {% enddetails %}
 
-- **[M04112201] Technology Development Research Project**
+- **[M04112201] [Technology Development Research Project](/teaching/tech-development-project/)**
   A studio course in which each student defines a problem, builds a working service with a coding agent (Claude Code), verifies it, and deploys it. There are no exams: the semester produces a personal homepage and one deployed project, and every student is assessed on whether they can read, run, and explain the changes the agent proposes.
-  **Course Page:** [donghyunlee-lab.github.io/teaching/tech-development-project](/teaching/tech-development-project/)
 
 {% details Course Details %}
 

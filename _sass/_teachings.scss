@@ -4,25 +4,13 @@
  *  course info, schedule, grading and student showcase)
  *****************************/
 
-// ---- Course cards on the Teaching page ----
-.courses {
-  margin: 1rem 0 2rem;
-}
-
-.courses .year {
-  margin: 1.5rem 0 0.75rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--global-divider-color);
-}
-
-.course-list,
+// ---- Student project cards ----
 .showcase-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
 }
 
-.course-item,
 .showcase-item {
   display: flex;
   flex-direction: column;
@@ -46,21 +34,11 @@
   }
 }
 
-.course-title,
 .showcase-title {
   font-weight: 600;
   color: var(--global-theme-color);
 }
 
-.course-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  font-size: 0.85rem;
-  color: var(--global-text-color-light);
-}
-
-.course-description,
 .showcase-summary {
   font-size: 0.9rem;
 }

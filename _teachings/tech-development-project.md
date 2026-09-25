@@ -2,11 +2,8 @@
 layout: course
 title: 기술개발연구프로젝트
 description: 한 학기 동안 내가 정한 문제를 실제로 작동하는 서비스로 만들고, 그것이 왜 작동하는지 직접 설명할 수 있게 되는 수업입니다. Claude Code로 개발하고, 매주 수업 시간에 만듭니다.
-summary: 코딩 에이전트(Claude Code)로 개인 홈페이지와 작동하는 서비스 하나를 만들어 배포하는 스튜디오 수업
 course_code: M04112201
-year: 2026
 term: 2026년 2학기
-term_order: 2
 audience: 3학년 · 3학점
 time: 수 7·8·9교시 (15:00–17:50)
 location: 2605호
