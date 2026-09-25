@@ -1,0 +1,152 @@
+---
+layout: page
+---
+{% comment %}
+  Course page layout (based on al-folio v0.16.3 _layouts/course.liquid).
+  Front matter fields (all optional except title):
+    course_code, term, year, term_order, instructor, department, audience, time, location, contact
+    summary (one line for the course card on the Teaching page)
+    highlights: [text, ...]                         badges under the info box
+    schedule:   [{weeks, topic, description, deliverable}]
+    grading:    [{when, item, check, weight}] + grading_note
+    showcase:   [{title, url, summary, author, image, example}] + showcase_note
+  The page body (Markdown) is rendered after the info box. If the body contains the marker
+  <!-- course:sections -->, the schedule/grading/showcase sections are inserted there and the
+  rest of the body follows them; otherwise they come after the whole body.
+{% endcomment %}
+{% assign course_parts = content | split: '<!-- course:sections -->' %}
+<div class="course">
+  {% if page.course_code or page.term or page.instructor or page.time or page.location %}
+    <dl class="course-info">
+      {% if page.course_code %}
+        <div>
+          <dt>학수번호</dt>
+          <dd>{{ page.course_code }}</dd>
+        </div>
+      {% endif %}
+      {% if page.term %}
+        <div>
+          <dt>학기</dt>
+          <dd>{{ page.term }}</dd>
+        </div>
+      {% endif %}
+      {% if page.audience %}
+        <div>
+          <dt>대상 · 학점</dt>
+          <dd>{{ page.audience }}</dd>
+        </div>
+      {% endif %}
+      {% if page.time %}
+        <div>
+          <dt>시간</dt>
+          <dd>{{ page.time }}</dd>
+        </div>
+      {% endif %}
+      {% if page.location %}
+        <div>
+          <dt>강의실</dt>
+          <dd>{{ page.location }}</dd>
+        </div>
+      {% endif %}
+      {% if page.instructor %}
+        <div>
+          <dt>담당</dt>
+          <dd>{{ page.instructor }}</dd>
+        </div>
+      {% endif %}
+      {% if page.department %}
+        <div>
+          <dt>전공</dt>
+          <dd>{{ page.department }}</dd>
+        </div>
+      {% endif %}
+    </dl>
+  {% endif %}
+
+  {% if page.highlights %}
+    <ul class="course-highlights">
+      {% for h in page.highlights %}
+        <li>{{ h }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {{ course_parts[0] }}
+
+  {% if page.schedule %}
+    <h2 id="schedule">{{ page.schedule_title | default: '주차별 흐름' }}</h2>
+    {% if page.schedule_note %}<p class="course-note">{{ page.schedule_note }}</p>{% endif %}
+    <ol class="course-schedule">
+      {% for entry in page.schedule %}
+        <li>
+          <span class="schedule-weeks">{{ entry.weeks }}</span>
+          <div class="schedule-body">
+            <strong>{{ entry.topic }}</strong>
+            {% if entry.description %}
+              <div class="schedule-description">{{ entry.description | markdownify }}</div>
+            {% endif %}
+            {% if entry.deliverable %}
+              <span class="schedule-deliverable">{{ entry.deliverable }}</span>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+
+  {% if page.grading %}
+    <h2 id="grading">평가</h2>
+    {% if page.grading_note %}<p class="course-note">{{ page.grading_note }}</p>{% endif %}
+    <div class="table-responsive">
+      <table class="table table-sm course-grading">
+        <thead>
+          <tr>
+            <th>시기</th>
+            <th>항목</th>
+            <th>확인하는 것</th>
+            <th class="text-end">비중</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for g in page.grading %}
+            <tr>
+              <td>{{ g.when }}</td>
+              <td>{{ g.item }}</td>
+              <td>{{ g.check }}</td>
+              <td class="text-end">{{ g.weight }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+
+  {% if page.showcase %}
+    <h2 id="showcase">학생 프로젝트</h2>
+    {% if page.showcase_note %}<p class="course-note">{{ page.showcase_note }}</p>{% endif %}
+    <div class="showcase-list">
+      {% for p in page.showcase %}
+        <a class="showcase-item" href="{{ p.url }}" target="_blank" rel="noopener noreferrer nofollow">
+          {% if p.image %}
+            <img class="showcase-image" src="{{ p.image | relative_url }}" alt="{{ p.title }} 화면" loading="lazy">
+          {% endif %}
+          <span class="showcase-title">
+            {{ p.title }}
+            {% if p.example %}<span class="showcase-badge">예시</span>{% endif %}
+          </span>
+          {% if p.summary %}<span class="showcase-summary">{{ p.summary }}</span>{% endif %}
+          {% if p.author %}<span class="showcase-author">{{ p.author }}</span>{% endif %}
+          <span class="showcase-url">{{ p.url | remove: 'https://' | remove: 'http://' }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if course_parts.size > 1 %}
+    {{ course_parts[1] }}
+  {% endif %}
+
+  {% if page.contact %}
+    <p class="course-contact">문의 {{ page.contact }}</p>
+  {% endif %}
+</div>

@@ -141,6 +141,9 @@ collections:
     output: true
   projects:
     output: true
+  teachings:
+    output: true
+    permalink: /teaching/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

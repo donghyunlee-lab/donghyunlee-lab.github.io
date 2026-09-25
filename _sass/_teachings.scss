@@ -1,0 +1,201 @@
+/*****************************
+ * Teachings / course pages
+ * (based on al-folio v0.16.3 _sass/_teachings.scss, extended for
+ *  course info, schedule, grading and student showcase)
+ *****************************/
+
+// ---- Course cards on the Teaching page ----
+.courses {
+  margin: 1rem 0 2rem;
+}
+
+.courses .year {
+  margin: 1.5rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.course-list,
+.showcase-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.course-item,
+.showcase-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition:
+    transform 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-2px);
+    border-color: var(--global-theme-color);
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+}
+
+.course-title,
+.showcase-title {
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+.course-description,
+.showcase-summary {
+  font-size: 0.9rem;
+}
+
+// ---- Course page ----
+.course {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.course-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+
+  dt {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--global-text-color-light);
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+.course-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.2rem 0.7rem;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--global-theme-color);
+  }
+}
+
+.course h2 {
+  margin-top: 2.5rem;
+}
+
+.course-note {
+  color: var(--global-text-color-light);
+}
+
+.course-schedule {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--global-divider-color);
+  }
+}
+
+.schedule-weeks {
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
+.schedule-description p {
+  margin: 0.2rem 0 0;
+}
+
+.schedule-deliverable {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background-color: var(--global-tip-block-bg);
+  color: var(--global-tip-block-text);
+}
+
+.course-grading {
+  margin-top: 0.5rem;
+  color: var(--global-text-color);
+
+  td:first-child,
+  td:last-child {
+    white-space: nowrap;
+  }
+}
+
+.showcase-item {
+  overflow: hidden;
+}
+
+.showcase-image {
+  width: calc(100% + 2.2rem);
+  margin: -1rem -1.1rem 0.5rem;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.showcase-badge {
+  margin-left: 0.4rem;
+  padding: 0 0.45rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  background-color: var(--global-warning-block-bg);
+  color: var(--global-warning-block-text);
+}
+
+.showcase-author,
+.showcase-url {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+}
+
+.course-contact {
+  margin-top: 2.5rem;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 576px) {
+  .course-schedule li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

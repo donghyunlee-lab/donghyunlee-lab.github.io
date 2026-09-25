@@ -7,6 +7,14 @@ nav: true
 nav_order: 6
 ---
 
+## 📚 Course Pages
+
+Detailed pages (schedule, grading, and student projects) for current courses.
+
+{% include courses.liquid %}
+
+<br>
+
 ## 💻 Online Courses (KOCW)
 
 ---
@@ -59,7 +67,7 @@ nav_order: 6
 
 - **[M04112201] Technology Development Research Project**
   A studio course in which each student defines a problem, builds a working service with a coding agent (Claude Code), verifies it, and deploys it. There are no exams: the semester produces a personal homepage and one deployed project, and every student is assessed on whether they can read, run, and explain the changes the agent proposes.
-  **Course Page:** [donghyunlee-lab.github.io/tech-development-project](https://donghyunlee-lab.github.io/tech-development-project/)
+  **Course Page:** [donghyunlee-lab.github.io/teaching/tech-development-project](/teaching/tech-development-project/)
 
 {% details Course Details %}
 
