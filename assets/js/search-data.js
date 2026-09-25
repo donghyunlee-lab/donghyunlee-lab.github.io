@@ -225,6 +225,11 @@ ninja.data = [{
           description: "Developing a Trustworthy AI model to predict harmful algal blooms (HABs).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_algal_bloom/";
+            },},{id: "teachings-technology-development-research-project",
+          title: 'Technology Development Research Project',
+          description: "Each student turns a problem they choose into a working service and learns to explain why it works. We build with Claude Code, in class, every week.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teaching/tech-development-project/";
             },},{
         id: 'social-linkedin',
         title: 'LinkedIn',
