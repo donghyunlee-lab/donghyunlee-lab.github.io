@@ -19,43 +19,43 @@ layout: page
     <dl class="course-info">
       {% if page.course_code %}
         <div>
-          <dt>학수번호</dt>
+          <dt>Course code</dt>
           <dd>{{ page.course_code }}</dd>
         </div>
       {% endif %}
       {% if page.term %}
         <div>
-          <dt>학기</dt>
+          <dt>Term</dt>
           <dd>{{ page.term }}</dd>
         </div>
       {% endif %}
       {% if page.audience %}
         <div>
-          <dt>대상 · 학점</dt>
+          <dt>Level</dt>
           <dd>{{ page.audience }}</dd>
         </div>
       {% endif %}
       {% if page.time %}
         <div>
-          <dt>시간</dt>
+          <dt>Time</dt>
           <dd>{{ page.time }}</dd>
         </div>
       {% endif %}
       {% if page.location %}
         <div>
-          <dt>강의실</dt>
+          <dt>Room</dt>
           <dd>{{ page.location }}</dd>
         </div>
       {% endif %}
       {% if page.instructor %}
         <div>
-          <dt>담당</dt>
+          <dt>Instructor</dt>
           <dd>{{ page.instructor }}</dd>
         </div>
       {% endif %}
       {% if page.department %}
         <div>
-          <dt>전공</dt>
+          <dt>Program</dt>
           <dd>{{ page.department }}</dd>
         </div>
       {% endif %}
@@ -73,7 +73,7 @@ layout: page
   {{ course_parts[0] }}
 
   {% if page.schedule %}
-    <h2 id="schedule">{{ page.schedule_title | default: '주차별 흐름' }}</h2>
+    <h2 id="schedule">{{ page.schedule_title | default: 'Schedule' }}</h2>
     {% if page.schedule_note %}<p class="course-note">{{ page.schedule_note }}</p>{% endif %}
     <ol class="course-schedule">
       {% for entry in page.schedule %}
@@ -94,16 +94,16 @@ layout: page
   {% endif %}
 
   {% if page.grading %}
-    <h2 id="grading">평가</h2>
+    <h2 id="grading">Grading</h2>
     {% if page.grading_note %}<p class="course-note">{{ page.grading_note }}</p>{% endif %}
     <div class="table-responsive">
       <table class="table table-sm course-grading">
         <thead>
           <tr>
-            <th>시기</th>
-            <th>항목</th>
-            <th>확인하는 것</th>
-            <th class="text-end">비중</th>
+            <th>When</th>
+            <th>Item</th>
+            <th>What we check</th>
+            <th class="text-end">Weight</th>
           </tr>
         </thead>
         <tbody>
@@ -121,17 +121,17 @@ layout: page
   {% endif %}
 
   {% if page.showcase %}
-    <h2 id="showcase">학생 프로젝트</h2>
+    <h2 id="showcase">Student projects</h2>
     {% if page.showcase_note %}<p class="course-note">{{ page.showcase_note }}</p>{% endif %}
     <div class="showcase-list">
       {% for p in page.showcase %}
         <a class="showcase-item" href="{{ p.url }}" target="_blank" rel="noopener noreferrer nofollow">
           {% if p.image %}
-            <img class="showcase-image" src="{{ p.image | relative_url }}" alt="{{ p.title }} 화면" loading="lazy">
+            <img class="showcase-image" src="{{ p.image | relative_url }}" alt="{{ p.title }} screenshot" loading="lazy">
           {% endif %}
           <span class="showcase-title">
             {{ p.title }}
-            {% if p.example %}<span class="showcase-badge">예시</span>{% endif %}
+            {% if p.example %}<span class="showcase-badge">Example</span>{% endif %}
           </span>
           {% if p.summary %}<span class="showcase-summary">{{ p.summary }}</span>{% endif %}
           {% if p.author %}<span class="showcase-author">{{ p.author }}</span>{% endif %}
@@ -146,6 +146,6 @@ layout: page
   {% endif %}
 
   {% if page.contact %}
-    <p class="course-contact">문의 {{ page.contact }}</p>
+    <p class="course-contact">Contact: {{ page.contact }}</p>
   {% endif %}
 </div>

@@ -11,10 +11,14 @@ nav_order: 6
 
 ---
 
-- **[Python Programming](http://kocw.net/home/cview.do?cid=3aeee0aa8ad8e840)** — Python fundamentals for data analysis: variables, operators, conditionals, loops, functions, NumPy and Pandas.
-- **[Python Programming 2](http://www.kocw.net/home/search/kemView.do?kemId=1368521)** — Object-oriented programming and core Python concepts.
-- **[R Programming (Big Data Analysis)](http://www.kocw.net/home/search/kemView.do?kemId=1335286)** — R for data analysis: preprocessing, visualization, descriptive statistics, and regression.
-- **[JAVA Programming (Fundamentals of Programming)](http://www.kocw.net/home/search/kemView.do?kemId=1351017)** — Core programming concepts in Java, with an introduction to object-oriented programming.
+- **[Python Programming](http://kocw.net/home/cview.do?cid=3aeee0aa8ad8e840)**
+  Python fundamentals for data analysis: variables, operators, conditionals, loops, functions, NumPy, and Pandas.
+- **[Python Programming 2](http://www.kocw.net/home/search/kemView.do?kemId=1368521)**
+  Object-oriented programming and core Python concepts.
+- **[R Programming (Big Data Analysis)](http://www.kocw.net/home/search/kemView.do?kemId=1335286)**
+  R for data analysis: preprocessing, visualization, descriptive statistics, and regression.
+- **[JAVA Programming (Fundamentals of Programming)](http://www.kocw.net/home/search/kemView.do?kemId=1351017)**
+  Core programming concepts in Java, with an introduction to object-oriented programming.
 
 <br>
 
@@ -48,32 +52,6 @@ nav_order: 6
 
 - **[M04112201] [Technology Development Research Project](/teaching/tech-development-project/)**
   A studio course in which each student defines a problem, builds a working service with a coding agent (Claude Code), verifies it, and deploys it. There are no exams: the semester produces a personal homepage and one deployed project, and every student is assessed on whether they can read, run, and explain the changes the agent proposes.
-
-{% details Course Details %}
-
-**Semester Structure**
-
-- Weeks 2–5: build and deploy a personal homepage — information structure, HTML and CSS, Git, README, and a public URL
-- Weeks 4–8: choose one user and one problem, fix the core flows and the definition of done, and reach a working mid-term MVP
-- Weeks 9–15: user testing, quality and security review, deployment, documentation, and a final demo with a retrospective
-- Each 150-minute session spends 85 minutes on development with rotating coaching, and closes with a three-line record: what was done, what was verified, what comes next
-
-**Project Tracks**
-
-- Public and social data explorers — youth employment, population change, commuting time and cost
-- Campus and community information services — scholarships, exchange-student life, campus facilities and events
-- Research support tools — survey CSV checkers, interview tagging boards, literature evidence cards
-- Comparison and simulation tools — commuting alternatives, event budgets, time-use scenarios
-
-**Learning Objectives**
-
-- Fix the user, the problem, the core flows, and a definition of done before writing code
-- Write requests that carry the goal, the context, and the completion criteria, then read and run the agent's changes instead of accepting them
-- Diagnose failures through reproduction, boundary conditions, and logs, and confirm each fix under the conditions that exposed it
-- Handle data sources, personal information, and secrets responsibly, and gather feedback from at least three real users
-- Deploy a reproducible service with a README and explain the design decisions, the verification evidence, and the remaining limits
-
-{% enddetails %}
 
 - **[M04111101] Industrial Data Visualization**
   Select the chart that fits the analytical goal — comparison, trend, distribution, or relationship — and turn an AI-generated draft into a defensible visualization. Students build static charts with Matplotlib and Seaborn, interactive charts with Plotly, and integrate them into a deployed Streamlit dashboard.

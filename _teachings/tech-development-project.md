@@ -1,176 +1,173 @@
 ---
 layout: course
-title: 기술개발연구프로젝트
-description: 한 학기 동안 내가 정한 문제를 실제로 작동하는 서비스로 만들고, 그것이 왜 작동하는지 직접 설명할 수 있게 되는 수업입니다. Claude Code로 개발하고, 매주 수업 시간에 만듭니다.
+title: Technology Development Research Project
+description: Each student turns a problem they choose into a working service and learns to explain why it works. We build with Claude Code, in class, every week.
 course_code: M04112201
-term: 2026년 2학기
-audience: 3학년 · 3학점
-time: 수 7·8·9교시 (15:00–17:50)
-location: 2605호
-instructor: 이동현
-department: Social Science & AI 융합전공
+term: Fall 2026
+audience: Year 3 · 3 credits
+time: Wed 15:00-17:50 (periods 7, 8, 9)
+location: Room 2605
+instructor: Donghyun Lee
+department: Social Science & AI, HUFS
 contact: donghyun.lee@hufs.ac.kr
 highlights:
-  - 시험 없음
-  - 개인 프로젝트
-  - 매주 개발
-  - 수업 시간에 완성
+  - No exams
+  - Individual projects
+  - Built in class every week
 
-schedule_title: 15주 흐름
-schedule_note: 주차가 지날수록 만드는 대상이 커집니다. 표시한 주에 결과물을 제출하고 시연합니다.
+schedule_title: Weekly plan
+schedule_note: The work grows in size as the semester goes on. Weeks with a deliverable end in a submission and a demo.
 schedule:
-  - weeks: 1주
-    topic: 수업 방식과 AI 활용 원칙
-    description: 학기 결과물, 개인 평가, 내가 설명할 책임의 범위를 확인합니다.
-  - weeks: 2–3주
-    topic: 개인 홈페이지와 웹 기초
-    description: 정보 구조, HTML·CSS 기초, AI 작업 요청과 확인, Git·README·첫 배포.
-  - weeks: 4–5주
-    topic: 문제 정의와 프로젝트 범위
-    description: 외부 특강으로 문제 정의를 배우고, 대상 사용자·핵심 흐름·완료 기준을 정합니다.
-    deliverable: 5주 · 개인 홈페이지 제출
-  - weeks: 6–8주
-    topic: 핵심 기능 구현과 중간 MVP
-    description: 사용자 흐름과 데이터를 설계하고, 작은 단위로 구현하며 오류를 재현합니다.
-    deliverable: 8주 · 중간 MVP 제출·개별 시연
-  - weeks: 9–12주
-    topic: 사용자 피드백과 품질 개선
-    description: AI 협업 개발 특강, 사용자 테스트, 수정 우선순위, 출처·개인정보·보안 점검.
-    deliverable: 12주 · 베타 검증 점검
-  - weeks: 13–14주
-    topic: 배포·문서화·설명
-    description: 처음 보는 사람이 실행할 수 있는지 확인하고, 포트폴리오와 발표를 준비합니다.
-  - weeks: 15주
-    topic: 최종 시연과 회고
-    description: 문제·작동·검증·한계를 직접 설명하고 질의응답을 거칩니다.
-    deliverable: 15주 · 최종 프로젝트 제출
+  - weeks: Week 1
+    topic: Course format and AI use
+    description: What you will produce, how individual grading works, and what you are responsible for explaining.
+  - weeks: Weeks 2-3
+    topic: Personal homepage and web basics
+    description: Information structure, HTML and CSS basics, writing and checking AI requests, Git, a README, and your first deployment.
+  - weeks: Weeks 4-5
+    topic: Problem definition and scope
+    description: A guest lecture on problem definition. You then choose your target user, core flow, and definition of done.
+    deliverable: "Week 5: personal homepage due"
+  - weeks: Weeks 6-8
+    topic: Core features and midterm MVP
+    description: Design the user flow and data, build in small steps, and reproduce errors.
+    deliverable: "Week 8: midterm MVP and individual demo"
+  - weeks: Weeks 9-12
+    topic: User feedback and quality
+    description: A guest lecture on AI-assisted development, user testing, fix priorities, and checks on sources, personal data, and security.
+    deliverable: "Week 12: beta check"
+  - weeks: Weeks 13-14
+    topic: Deployment and documentation
+    description: Make sure someone new can run your service, then prepare your portfolio and presentation.
+  - weeks: Week 15
+    topic: Final demo and retrospective
+    description: Explain the problem, how the service works, how you verified it, and where it falls short, then take questions.
+    deliverable: "Week 15: final project due"
 
-grading_note: 시험 없음 · 모든 항목 개인 평가. 디자인 취향, 코드량, 커밋 수, 프롬프트 개수는 평가하지 않으며, 모든 프로젝트에 같은 기준을 적용합니다.
+grading_note: There are no exams, and every item is graded individually. Design taste, lines of code, commit counts, and prompt counts do not affect your grade. Every project is graded on the same criteria.
 grading:
-  - when: 상시
-    item: 출석
-    check: 대학 출결 기준
+  - when: Ongoing
+    item: Attendance
+    check: University attendance rules
     weight: 10%
-  - when: 상시
-    item: 참여
-    check: 수업 중 개발, 세 줄 기록, 동료 피드백
+  - when: Ongoing
+    item: Participation
+    check: In-class development, three-line logs, peer feedback
     weight: 10%
-  - when: 5주
-    item: 개인 홈페이지
-    check: 공개 URL, 저장소, 반응형 화면, README
+  - when: Week 5
+    item: Personal homepage
+    check: Public URL, repository, responsive layout, README
     weight: 20%
-  - when: 8주
-    item: 중간 MVP
-    check: 핵심 흐름이 작동하는 배포본과 검증 설명
+  - when: Week 8
+    item: Midterm MVP
+    check: A deployed build with a working core flow, and how you verified it
     weight: 20%
-  - when: 15주
-    item: 최종 프로젝트
-    check: 최종 배포본, 저장소, 검증 기록, 시연·회고
+  - when: Week 15
+    item: Final project
+    check: Final deployment, repository, verification log, demo and retrospective
     weight: 40%
 
-showcase_note: 수업에서 만든 개인 홈페이지와 서비스 가운데 학생이 게시에 동의한 작품을 소개합니다. 각 사이트는 학생이 직접 운영하며, 게시 중단을 요청하면 바로 내립니다.
+showcase_note: Homepages and services from this course, shared with each student's permission. Students run their own sites, and any project comes down on request.
 showcase:
   - title: Donghyun Lee AI Group
     url: https://donghyunlee-lab.github.io/
-    summary: 학생 프로젝트 카드가 어떻게 보이는지 보여 주는 예시입니다. 게시 동의를 받은 뒤 실제 학생 작품으로 바꿉니다.
+    summary: A sample card showing how student projects will appear here once students give permission.
     example: true
 ---
 
-## 학기가 끝나면 두 가지가 남습니다
+## What you will build
 
-둘 다 공개 주소로 열리는 결과물입니다. 발표 자료나 보고서가 아니라, 다른 사람이 실제로 써 볼 수 있는 것을 만듭니다.
+You leave the course with two things. Both run at a public URL, and other people can use them.
 
-- **개인 홈페이지** (5주차 제출 · 20%) — 자기소개, 관심 분야, 작업 링크를 담은 공개 포트폴리오. 2~3주차에 처음 만들고 학기 말까지 프로젝트와 회고를 이어 붙입니다.
-- **작동하는 서비스** (8주차 중간 20% · 15주차 최종 40%) — 사용자와 문제를 직접 정하고 핵심 흐름을 구현합니다. 테스트와 실제 사용자 피드백으로 고친 뒤 배포까지 마칩니다.
+- A personal homepage with your introduction, interests, and links to your work. You build it in weeks 2-3 and keep adding your project and retrospective until the end of the semester.
+- A working service for a user and a problem you choose. You build the core flow, test it with real users, fix what breaks, and deploy it.
 
-## 이런 수업입니다
+## What you will learn
 
-수강 전에 정확히 알고 오시라고 양쪽을 함께 적었습니다.
+- Define the user, the problem, the core flows, and a definition of done before writing code.
+- Write requests that state the goal, the context, and the completion criteria, then read and run the agent's changes before accepting them.
+- Diagnose failures by reproducing them and checking boundary conditions and logs, and confirm each fix under the conditions that exposed it.
+- Handle data sources, personal information, and secrets responsibly, and collect feedback from at least three real users.
+- Deploy a reproducible service with a README, and explain your design decisions, your verification evidence, and the remaining limits.
 
-**수업에서 하는 일**
+## What the course leaves out
 
-- 사용자와 문제를 정하고, 이번 학기에 만들 범위를 좁힙니다
-- 목표·맥락·완료 기준을 담아 AI에 작업을 요청합니다
-- AI가 바꾼 코드를 직접 읽고 실행해 확인합니다
-- 오류를 재현하고 경계조건을 시험합니다
-- Git·README·배포로 남이 실행할 수 있게 만듭니다
-- 동료 3~4명과 서로의 결과물을 사용해 보고 고칩니다
+- Midterm and final exams
+- Group projects with a shared grade
+- Lectures that walk through programming syntax in order
+- Summary reports on theory
+- Paid APIs, payments, or complex authentication
+- Projects that handle real sensitive personal data
 
-**수업에서 하지 않는 일**
+## A 150-minute class
 
-- 중간·기말 시험 (없습니다)
-- 공동 점수를 매기는 조별 과제
-- 프로그래밍 언어 문법을 순서대로 배우는 강의
-- 이론 요약 보고서 제출
-- 유료 API·결제·복잡한 인증이 필요한 개발
-- 실제 민감 개인정보를 다루는 프로젝트
+Most of the time goes to building. During development, the instructor moves around the room and helps wherever you are stuck.
 
-## 수업 150분은 이렇게 씁니다
-
-설명을 듣는 시간보다 만드는 시간이 깁니다. 교수자는 개발 시간 동안 자리를 돌며 막힌 부분을 함께 봅니다.
-
-| 순서 | 시간 | 내용 |
+| Part | Minutes | What happens |
 | --- | --- | --- |
-| 도입 | 10분 | 오늘의 결과물과 완료 기준 |
-| 미니강의·시연 | 25분 | 이번 주에 쓸 판단 기준 |
-| 개발·순회 코칭 | 85분 | 각자 자기 프로젝트 개발 |
-| 데모·피드백 | 25분 | 동료가 직접 사용해 보기 |
-| 개인 기록 | 5분 | 한 일·확인 근거·다음 작업 |
+| Opening | 10 | The day's goal and definition of done |
+| Mini-lecture and demo | 25 | The criteria you will use this week |
+| Development and coaching | 85 | You work on your own project |
+| Demo and feedback | 25 | Classmates try your work |
+| Personal log | 5 | What you did, how you checked it, what comes next |
 {: .table .table-sm }
 
-휴식은 별도입니다. 매주 마지막 5분에는 한 일 / 확인한 근거 / 다음 작업 세 줄만 남깁니다. AI와 나눈 대화 전체를 제출하지 않습니다.
+Breaks are extra. The log is three lines, and you do not submit your full AI conversation.
 
-## 무엇을 만들 수 있나요
+## Project tracks
 
-네 가지 방향 중에서 고릅니다. 모두 사회과학 전공의 관심에서 출발해 실제로 쓰이는 도구로 만드는 것을 목표로 합니다.
+Pick one of four directions. Each starts from a social science interest and ends in a tool people can use.
 
-- **공공·사회 데이터 탐색기** — 청년 고용과 인구 변화, 외국인 주민 생활지표, 통학 시간·비용 비교
-- **캠퍼스·지역사회 정보 서비스** — 장학·비교과 탐색기, 교환학생 생활정보, 교내 시설·행사 안내
-- **사회과학 연구 보조도구** — 설문 CSV 점검기, 인터뷰 태깅 보드, 문헌 근거카드
-- **비교·시뮬레이션 도구** — 통학 대안 비교, 학생 행사 예산, 시간 사용 시나리오
+| Track | Examples |
+| --- | --- |
+| Public and social data explorers | Youth employment and population change, living indicators for foreign residents, commuting time and cost |
+| Campus and community information | Scholarships and extracurriculars, exchange-student life, campus facilities and events |
+| Social science research tools | Survey CSV checker, interview tagging board, literature evidence cards |
+| Comparison and simulation tools | Commuting options, student event budgets, time-use scenarios |
+{: .table .table-sm }
 
 <!-- course:sections -->
 
-## 이런 학생에게 권합니다
+## Is this course for you?
 
-**이 수업이 맞는 경우**
+The course fits you if you:
 
-- 평소 불편했던 문제를 직접 도구로 만들어 보고 싶다
-- 졸업 전에 공개할 수 있는 결과물 하나를 남기고 싶다
-- AI로 개발하되 결과를 스스로 판단할 수 있게 되고 싶다
-- 시험보다 만들고 고치는 과정에서 더 배운다
+- want to build a tool for a problem you have run into
+- want a public project to show before you graduate
+- want to use AI for development and still judge the results yourself
+- learn more from building and fixing than from exams
 
-**준비할 것**
+What you need:
 
-- 수업에 가져올 본인 노트북
-- Claude Code 실행 환경 — 지원되는 구독이나 기관에서 제공하는 접근. 설치와 로그인은 첫 주에 함께 확인합니다
-- 웹 개발 경험은 없어도 됩니다. 인터넷·HTML·CSS는 2주차에 기초부터 함께 다룹니다
-- 매주 수업 시간에 실제로 개발할 각오
+- Your own laptop.
+- Access to Claude Code, through a supported subscription or institutional access. We set up installation and login together in week 1.
+- No prior web development experience. Week 2 starts from how the web works, then HTML and CSS.
+- Readiness to build during class every week.
 
-## 자주 묻는 질문
+## FAQ
 
-{% details 코딩을 해 본 적이 없는데 들어도 되나요? %}
-됩니다. 2주차에 인터넷이 동작하는 방식부터 HTML·CSS 수정까지 함께 다루고, 첫 홈페이지를 그날 수업 안에서 만듭니다. 다만 AI가 만든 결과를 그대로 제출하는 수업은 아닙니다. 직접 실행해 확인하고 무엇을 왜 바꿨는지 설명할 수 있어야 합니다.
+{% details I have never written code. Can I take this course? %}
+Yes. In week 2 we cover how the internet works and how to edit HTML and CSS, and you build your first homepage in that class. You cannot hand in AI output as is, though. You need to run it, check it, and explain what you changed and why.
 {% enddetails %}
 
-{% details 조별 과제인가요? %}
-아닙니다. 결과물과 평가는 모두 개인 단위입니다. 다만 3~4명씩 스튜디오로 앉아 서로의 화면을 사용해 보고 피드백을 주고받습니다. 공동 점수나 조별 보고서는 없습니다.
+{% details Is this a group project? %}
+No. Deliverables and grades are individual. You sit in studio groups of three or four, try each other's work, and give feedback, but there are no shared grades or group reports.
 {% enddetails %}
 
-{% details AI를 써도 되나요? 어디까지 허용되나요? %}
-Claude Code와 공식 문서는 모든 과제에서 사용할 수 있습니다. 대신 결과를 직접 실행·검증하고 자신의 설계와 변경을 설명할 책임이 따릅니다. 전체 대화 기록은 제출하지 않으며, 비밀키와 실제 개인정보는 프롬프트·저장소·배포물에 넣지 않습니다.
+{% details Can I use AI? How much? %}
+You can use Claude Code and official documentation on every assignment. You are responsible for running and verifying the results and for explaining your design and changes. You do not submit your full chat history. Keep secret keys and real personal data out of prompts, repositories, and deployments.
 {% enddetails %}
 
-{% details 어떤 주제를 해야 할지 아직 모르겠습니다. %}
-4주차 외부 특강과 5주차 코칭에서 주제를 좁힙니다. 시작할 때 필요한 것은 사용자 한 유형과 해결할 문제 하나입니다. 큰 아이디어보다 학기 안에 끝낼 수 있는 범위가 중요합니다.
+{% details I don't know what to build yet. %}
+The week 4 guest lecture and week 5 coaching help you narrow it down. To start, you need one type of user and one problem. A scope you can finish this semester matters more than a big idea.
 {% enddetails %}
 
-{% details 수업 외 시간이 얼마나 필요한가요? %}
-개발의 상당 부분을 수업 150분 안에서 진행하도록 설계했습니다. 제출이 있는 5·8·15주에는 준비 시간이 더 필요합니다.
+{% details How much time outside class does it take? %}
+Most development happens during the 150-minute class. Deliverable weeks (5, 8, and 15) need extra preparation.
 {% enddetails %}
 
-{% details 외부 특강은 어떤 내용인가요? %}
-문제 정의와 제품 범위(4주), AI 협업 개발과 코드 검토·테스트·보안(9주) 두 번이 고정이고, 포트폴리오와 서비스 설명(13주)은 선택으로 운영합니다. 특강 일정은 연사 섭외에 따라 조정될 수 있습니다.
+{% details What are the guest lectures? %}
+Two are fixed: problem definition and product scope in week 4, and AI-assisted development with code review, testing, and security in week 9. A third, on portfolios and presenting your service in week 13, is optional. Dates may shift depending on the speakers.
 {% enddetails %}
 
-<p class="course-note">2026학년도 2학기 운영 기준입니다. 일정과 특강은 조정될 수 있습니다.</p>
+<p class="course-note">Based on the Fall 2026 offering. The schedule and guest lectures may change.</p>
