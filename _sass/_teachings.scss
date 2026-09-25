@@ -46,7 +46,7 @@
 // ---- Course page ----
 .course {
   word-break: keep-all;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .course-info {
@@ -89,6 +89,26 @@
 
 .course h2 {
   margin-top: 2.5rem;
+}
+
+// Markdown tables in a course page body get the same look as the grading table
+.course table:not(.table) {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  color: var(--global-text-color);
+
+  th,
+  td {
+    padding: 0.3rem 0.5rem;
+    border-top: 1px solid var(--global-divider-color);
+    vertical-align: top;
+  }
+
+  thead th {
+    border-top: none;
+    border-bottom: 2px solid var(--global-divider-color);
+  }
 }
 
 .course-note {

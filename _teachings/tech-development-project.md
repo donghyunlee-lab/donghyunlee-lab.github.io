@@ -103,14 +103,13 @@ You leave the course with two things. Both run at a public URL, and other people
 
 Most of the time goes to building. During development, the instructor moves around the room and helps wherever you are stuck.
 
-| Part | Minutes | What happens |
-| --- | --- | --- |
-| Opening | 10 | The day's goal and definition of done |
-| Mini-lecture and demo | 25 | The criteria you will use this week |
-| Development and coaching | 85 | You work on your own project |
-| Demo and feedback | 25 | Classmates try your work |
-| Personal log | 5 | What you did, how you checked it, what comes next |
-{: .table .table-sm }
+| Part                     | Minutes | What happens                                      |
+| ------------------------ | ------- | ------------------------------------------------- |
+| Opening                  | 10      | The day's goal and definition of done             |
+| Mini-lecture and demo    | 25      | The criteria you will use this week               |
+| Development and coaching | 85      | You work on your own project                      |
+| Demo and feedback        | 25      | Classmates try your work                          |
+| Personal log             | 5       | What you did, how you checked it, what comes next |
 
 Breaks are extra. The log is three lines, and you do not submit your full AI conversation.
 
@@ -118,13 +117,12 @@ Breaks are extra. The log is three lines, and you do not submit your full AI con
 
 Pick one of four directions. Each starts from a social science interest and ends in a tool people can use.
 
-| Track | Examples |
-| --- | --- |
+| Track                            | Examples                                                                                                 |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | Public and social data explorers | Youth employment and population change, living indicators for foreign residents, commuting time and cost |
-| Campus and community information | Scholarships and extracurriculars, exchange-student life, campus facilities and events |
-| Social science research tools | Survey CSV checker, interview tagging board, literature evidence cards |
-| Comparison and simulation tools | Commuting options, student event budgets, time-use scenarios |
-{: .table .table-sm }
+| Campus and community information | Scholarships and extracurriculars, exchange-student life, campus facilities and events                   |
+| Social science research tools    | Survey CSV checker, interview tagging board, literature evidence cards                                   |
+| Comparison and simulation tools  | Commuting options, student event budgets, time-use scenarios                                             |
 
 <!-- course:sections -->
 

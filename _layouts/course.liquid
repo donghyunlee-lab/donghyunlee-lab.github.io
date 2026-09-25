@@ -74,7 +74,9 @@ layout: page
 
   {% if page.schedule %}
     <h2 id="schedule">{{ page.schedule_title | default: 'Schedule' }}</h2>
-    {% if page.schedule_note %}<p class="course-note">{{ page.schedule_note }}</p>{% endif %}
+    {% if page.schedule_note %}
+      <p class="course-note">{{ page.schedule_note }}</p>
+    {% endif %}
     <ol class="course-schedule">
       {% for entry in page.schedule %}
         <li>
@@ -95,7 +97,9 @@ layout: page
 
   {% if page.grading %}
     <h2 id="grading">Grading</h2>
-    {% if page.grading_note %}<p class="course-note">{{ page.grading_note }}</p>{% endif %}
+    {% if page.grading_note %}
+      <p class="course-note">{{ page.grading_note }}</p>
+    {% endif %}
     <div class="table-responsive">
       <table class="table table-sm course-grading">
         <thead>
@@ -122,7 +126,9 @@ layout: page
 
   {% if page.showcase %}
     <h2 id="showcase">Student projects</h2>
-    {% if page.showcase_note %}<p class="course-note">{{ page.showcase_note }}</p>{% endif %}
+    {% if page.showcase_note %}
+      <p class="course-note">{{ page.showcase_note }}</p>
+    {% endif %}
     <div class="showcase-list">
       {% for p in page.showcase %}
         <a class="showcase-item" href="{{ p.url }}" target="_blank" rel="noopener noreferrer nofollow">
@@ -131,10 +137,16 @@ layout: page
           {% endif %}
           <span class="showcase-title">
             {{ p.title }}
-            {% if p.example %}<span class="showcase-badge">Example</span>{% endif %}
+            {% if p.example -%}
+              <span class="showcase-badge">Example</span>
+            {%- endif %}
           </span>
-          {% if p.summary %}<span class="showcase-summary">{{ p.summary }}</span>{% endif %}
-          {% if p.author %}<span class="showcase-author">{{ p.author }}</span>{% endif %}
+          {% if p.summary -%}
+            <span class="showcase-summary">{{ p.summary }}</span>
+          {%- endif %}
+          {% if p.author -%}
+            <span class="showcase-author">{{ p.author }}</span>
+          {%- endif %}
           <span class="showcase-url">{{ p.url | remove: 'https://' | remove: 'http://' }}</span>
         </a>
       {% endfor %}
