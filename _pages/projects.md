@@ -105,7 +105,7 @@ horizontal: false
         <small class="text-muted">2026 - 2029</small>
       </div>
       <p class="mb-1 mt-2">Development of physics-AI integrated dynamic graph meta-learning based algal bloom prediction technology for overcoming data scarcity.</p>
-      <small class="text-primary"><i class="fas fa-building"></i> Funded by Korea Research Foundation (NRF)</small>
+      <small class="text-primary"><i class="fas fa-building"></i> Funded by National Research Foundation of Korea (NRF)</small>
     </div>
 
     <div class="list-group-item list-group-item-action flex-column align-items-start p-4">
@@ -114,7 +114,7 @@ horizontal: false
         <small class="text-muted">2023 - 2025</small>
       </div>
       <p class="mb-1 mt-2">Developing spatial spread prediction models using Machine Learning.</p>
-      <small class="text-primary"><i class="fas fa-building"></i> Funded by National Wildlife Disease Management Institute</small>
+      <small class="text-primary"><i class="fas fa-building"></i> Funded by National Institute of Wildlife Disease Control and Prevention (NIWDCP)</small>
     </div>
 
     <div class="list-group-item list-group-item-action flex-column align-items-start p-4">
@@ -123,7 +123,7 @@ horizontal: false
         <small class="text-muted">2020 - 2025</small>
       </div>
       <p class="mb-1 mt-2">Long-term research on AI-based infectious disease modeling and transfer learning applications.</p>
-      <small class="text-primary"><i class="fas fa-building"></i> Funded by Korea Research Foundation (NRF)</small>
+      <small class="text-primary"><i class="fas fa-building"></i> Funded by National Research Foundation of Korea (NRF)</small>
     </div>
 
     <div class="list-group-item list-group-item-action flex-column align-items-start p-4">
@@ -141,7 +141,7 @@ horizontal: false
         <small class="text-muted">2023</small>
       </div>
       <p class="mb-1 mt-2">Remaining life measurement analysis and modeling for electric vehicle batteries.</p>
-      <small class="text-primary"><i class="fas fa-building"></i> Funded by Korea Test Laboratory (KTL)</small>
+      <small class="text-primary"><i class="fas fa-building"></i> Funded by Korea Testing Laboratory (KTL)</small>
     </div>
 
     <div class="list-group-item list-group-item-action flex-column align-items-start p-4">

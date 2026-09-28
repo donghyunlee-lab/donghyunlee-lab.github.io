@@ -5,11 +5,11 @@ date: 2026-01-05 09:00:00
 inline: false
 ---
 
-We are proud to announce that **Professor Donghyun Lee** has been appointed as an **Editorial Board Member (Management field)** for the **International Telecommunications Policy Review (ITPR)**.
+We are proud to announce that **Professor Donghyun Lee** has been appointed as an **Editorial Board Member** for the **International Telecommunications Policy Review (ITPR)**.
 
 **International Telecommunications Policy Review (ITPR)** is the flagship journal of the Korea Society for Information and Communication Policy. The journal publishes professional, creative, and high-impact research papers that offer theoretical, empirical, and policy insights into broadcasting, telecommunications, and the broader ICT sector. It covers a wide range of disciplines, including Economics, Management, Communication, Public Administration, and Law.
 
-In this role, Professor Lee will contribute his expertise in the management field to oversee the peer-review process and ensure the academic excellence of the journal. We extend our warmest congratulations to him on this appointment!
+In this role, Professor Lee will help oversee the peer-review process and the academic quality of the journal. We extend our warmest congratulations to him on this appointment!
 
 <div class="row mt-3">
     <div class="col-sm text-center">
