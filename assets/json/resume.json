@@ -189,16 +189,16 @@
   ],
   "certificates": [
     {
-      "name": "OCJP (Oracle Certified Java Programmer)",
+      "name": "SCJP (Sun Certified Programmer for the Java 2 Platform 1.4)",
       "date": "",
-      "issuer": "Oracle",
+      "issuer": "Sun Microsystems (now Oracle)",
       "url": "",
       "icon": ""
     },
     {
-      "name": "Survey analyst, Junior (Statistical analysis certification)",
+      "name": "Social Research Analyst, Level 2 (Korean National Technical Qualification)",
       "date": "",
-      "issuer": "South Korea",
+      "issuer": "Statistics Korea (issued by HRD Korea)",
       "url": "",
       "icon": ""
     },
