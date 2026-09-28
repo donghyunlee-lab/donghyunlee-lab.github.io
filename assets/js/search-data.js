@@ -65,8 +65,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "news-presentation-kstme-summer-conference-algal-bloom-mlops",
-          title: '🎤 [Presentation] KSTME Summer Conference (Algal Bloom MLOps)',
+        },{id: "news-presentation-kosime-summer-conference-algal-bloom-mlops",
+          title: '🎤 [Presentation] KOSIME Summer Conference (Algal Bloom MLOps)',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2024-07-06-talk-ktoe/";
@@ -110,8 +110,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-04-02-member-visit/";
-            },},{id: "news-news-appointed-editorial-board-for-journal-of-innovation-amp-knowledge-jcr-top-0-4",
-          title: '📰 [News] Appointed Editorial Board for Journal of Innovation &amp;amp; Knowledge (JCR Top...',
+            },},{id: "news-news-appointed-to-the-editorial-review-board-of-journal-of-innovation-amp-knowledge",
+          title: '📰 [News] Appointed to the Editorial Review Board of Journal of Innovation &amp;amp;...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-04-02-news-editor-board/";
