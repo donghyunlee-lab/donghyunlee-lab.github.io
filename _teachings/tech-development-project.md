@@ -16,7 +16,7 @@ highlights:
   - Built in class every week
 
 schedule_title: Weekly plan
-schedule_note: The work grows in size as the semester goes on. Weeks with a deliverable end in a submission and a demo.
+schedule_note: The work grows in size as the semester goes on. Weeks 8 and 15 have no class, only a submission deadline.
 schedule:
   - weeks: Week 1
     topic: Course format and AI use
@@ -24,25 +24,25 @@ schedule:
   - weeks: Weeks 2-3
     topic: Personal homepage and web basics
     description: Information structure, HTML and CSS basics, writing and checking AI requests, Git, a README, and your first deployment.
-  - weeks: Weeks 4-5
-    topic: Problem definition and scope
-    description: A guest lecture on problem definition. You then choose your target user, core flow, and definition of done.
+  - weeks: Weeks 4-6
+    topic: Services that collect and show data
+    description: Team exercises with scheduled GitHub Actions updates, Google Sheets, and open APIs from Korea's Public Data Portal. You also pick your own project and set its scope.
     deliverable: "Week 5: personal homepage due"
-  - weeks: Weeks 6-8
+  - weeks: Weeks 7-8
     topic: Core features and midterm MVP
-    description: Design the user flow and data, build in small steps, and reproduce errors.
-    deliverable: "Week 8: midterm MVP and individual demo"
+    description: Build a deployed version whose core flow works, and test it with normal input, empty results, and errors.
+    deliverable: "Week 8 (Oct 21): midterm MVP due by 11:59 AM"
   - weeks: Weeks 9-12
-    topic: User feedback and quality
-    description: A guest lecture on AI-assisted development, user testing, fix priorities, and checks on sources, personal data, and security.
-    deliverable: "Week 12: beta check"
+    topic: Growing your service on Vercel
+    description: Live queries with serverless functions, charts and maps, features that collect user input, optional generative AI, and a security check.
   - weeks: Weeks 13-14
-    topic: Deployment and documentation
-    description: Make sure someone new can run your service, then prepare your portfolio and presentation.
+    topic: Verification and polish
+    description: Get peer review on preview deployments, act on feedback from users, measure performance and accessibility, and get your final submission ready.
+    deliverable: "Week 13: beta check"
   - weeks: Week 15
-    topic: Final demo and retrospective
-    description: Explain the problem, how the service works, how you verified it, and where it falls short, then take questions.
-    deliverable: "Week 15: final project due"
+    topic: Final submission and retrospective
+    description: Submit your final deployment, with your verification log and retrospective written up in the README.
+    deliverable: "Week 15 (Dec 9): final project due by 11:59 AM"
 
 grading_note: There are no exams, and every item is graded individually. Design taste, lines of code, commit counts, and prompt counts do not affect your grade. Every project is graded on the same criteria.
 grading:
@@ -64,7 +64,7 @@ grading:
     weight: 20%
   - when: Week 15
     item: Final project
-    check: Final deployment, repository, verification log, demo and retrospective
+    check: Final deployment, repository, verification log, retrospective
     weight: 40%
 
 showcase_note: Homepages and services from this course, shared with each student's permission. Students run their own sites, and any project comes down on request.
@@ -101,17 +101,16 @@ You leave the course with two things. Both run at a public URL, and other people
 
 ## A 150-minute class
 
-Most of the time goes to building. During development, the instructor moves around the room and helps wherever you are stuck.
+From week 5, each class starts with a lecture and a live demo of one technique, then turns to building.
 
-| Part                     | Minutes | What happens                                      |
-| ------------------------ | ------- | ------------------------------------------------- |
-| Opening                  | 10      | The day's goal and definition of done             |
-| Mini-lecture and demo    | 25      | The criteria you will use this week               |
-| Development and coaching | 85      | You work on your own project                      |
-| Demo and feedback        | 25      | Classmates try your work                          |
-| Personal log             | 5       | What you did, how you checked it, what comes next |
+| Part                  | Minutes | What happens                                                        |
+| --------------------- | ------- | ------------------------------------------------------------------- |
+| Lecture and demo      | 55      | The week's technique, its limits, and the criteria for today's work |
+| Build together        | 45      | Everyone builds the same example, step by step                      |
+| Studio group practice | 45      | Your group applies the technique, led by the instructor             |
+| Personal log          | 5       | What you did, how you checked it, what comes next                   |
 
-Breaks are extra. The log is three lines, and you do not submit your full AI conversation.
+Breaks are extra. From week 7 the group practice time goes to your own project. The log is three lines, and you do not submit your full AI conversation.
 
 ## Project tracks
 
@@ -157,15 +156,15 @@ You can use Claude Code and official documentation on every assignment. You are 
 {% enddetails %}
 
 {% details I don't know what to build yet. %}
-The week 4 guest lecture and week 5 coaching help you narrow it down. To start, you need one type of user and one problem. A scope you can finish this semester matters more than a big idea.
+You pick two candidates in week 5 and narrow them to one at the week 6 scope check. To start, you need one type of user and one problem. A scope you can finish this semester matters more than a big idea.
 {% enddetails %}
 
 {% details How much time outside class does it take? %}
 Most development happens during the 150-minute class. Deliverable weeks (5, 8, and 15) need extra preparation.
 {% enddetails %}
 
-{% details What are the guest lectures? %}
-Two are fixed: problem definition and product scope in week 4, and AI-assisted development with code review, testing, and security in week 9. A third, on portfolios and presenting your service in week 13, is optional. Dates may shift depending on the speakers.
+{% details Which tools will I learn? %}
+In the first half you connect Google Sheets and open APIs from Korea's Public Data Portal to pages on GitHub Pages, kept up to date by GitHub Actions. In the second half you move your project to Vercel, use serverless functions for live queries and user input, and add charts and maps. Everything stays within free tiers, and generative AI features are optional.
 {% enddetails %}
 
-<p class="course-note">Based on the Fall 2026 offering. The schedule and guest lectures may change.</p>
+<p class="course-note">Based on the Fall 2026 offering. The schedule may change.</p>
