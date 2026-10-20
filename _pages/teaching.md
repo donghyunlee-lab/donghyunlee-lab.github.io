@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 description: A list of my online and undergraduate courses.
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 ## 💻 Online Courses (KOCW)

@@ -4,7 +4,7 @@ title: Gallery
 permalink: /gallery/
 description: Moments from the Donghyun Lee AI Group — conferences, seminars, awards, and lab life.
 nav: true
-nav_order: 7
+nav_order: 8
 ---
 
 <div class="container mt-3">

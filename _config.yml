@@ -12,6 +12,7 @@ contact_note: |
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Donghyun Lee AI Group
 footer_text: >
+  Prof. Lee's personal website: <a href="https://donghyunlee.kr">donghyunlee.kr</a>
 
 keywords: donghyunlee, hufs, donghyunlee-ai # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -332,6 +333,9 @@ external_links:
   rel: external nofollow noopener
   target: _blank
   exclude:
+    # our own sites stay followable (no nofollow): the lab's HPAI dashboard and the PI's personal site
+    - 'https://hpai\.kr.*'
+    - 'https://donghyunlee\.kr.*'
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images

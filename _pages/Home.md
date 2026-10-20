@@ -31,6 +31,12 @@ We study **when AI predictions and simulations can be trusted — and when they 
 
 ---
 
+**🛠️ Public Tools**
+
+- **[HPAI Dashboard (hpai.kr)](https://hpai.kr):** a non-commercial avian influenza dashboard we operate from public data, with every daily forecast kept on record. More on the [Tools](/tools/) page.
+
+---
+
 We welcome motivated **Master's and Ph.D. students** and interdisciplinary collaborations. Read our **[alumnus interview with Sangwon Chae of NH Bank](https://blog.naver.com/tukorea_official/222191800108)**.
 
 Contact Prof. Lee at **donghyun.lee [at] hufs.ac.kr**.
