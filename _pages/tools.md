@@ -17,7 +17,7 @@ nav_order: 6
     <div class="row g-0">
       <div class="col-md-5">
         <a href="https://hpai.kr">
-          <img src="{{ '/assets/img/tools/hpai-dashboard.jpg' | relative_url }}" class="img-fluid rounded-start"
+          <img src="{{ '/assets/img/tools/hpai-dashboard-en.jpg' | relative_url }}" class="img-fluid rounded-start"
             alt="HPAI Dashboard: map of South Korea showing county-level HPAI detection likelihood">
         </a>
       </div>
