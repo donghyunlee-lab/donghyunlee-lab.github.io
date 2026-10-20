@@ -67,7 +67,8 @@ permissions:
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
-    runs-on: ubuntu-latest
+    # ubuntu-latest moved to 26.04 (2026-10), where setup-ruby has no Ruby 3.3.5 build yet; pin the image that worked on 10-15
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
