@@ -53,7 +53,7 @@ ninja.data = [{
           },
         },{id: "nav-tools",
           title: "Tools",
-          description: "Public tools operated by the Donghyun Lee AI Group.",
+          description: "Tools built and run by the Donghyun Lee AI Group.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/tools/";
