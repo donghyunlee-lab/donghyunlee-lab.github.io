@@ -227,6 +227,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-09-18-prof-lee-kepas-chair-ksdgs-reviewer/";
+            },},{id: "news-paper-llm-user-simulator-audit-accepted-at-the-neurips-2026-usersim-workshop-non-archival",
+          title: '📜 [Paper] LLM User Simulator Audit Accepted at the NeurIPS 2026 UserSim Workshop...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-09-30-paper-neurips-usersim-workshop/";
             },},{id: "projects-ai-for-algal-bloom-forecasting",
           title: 'AI for Algal Bloom Forecasting',
           description: "Developing a Trustworthy AI model to predict harmful algal blooms (HABs).",
