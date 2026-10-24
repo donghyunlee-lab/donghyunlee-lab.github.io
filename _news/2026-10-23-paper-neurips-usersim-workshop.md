@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 📜 [Paper] LLM User Simulator Audit Accepted at the NeurIPS 2026 UserSim Workshop (Non-archival)
-date: 2026-09-30 00:00:00
+date: 2026-10-23 00:00:00
 inline: false
 ---
 
