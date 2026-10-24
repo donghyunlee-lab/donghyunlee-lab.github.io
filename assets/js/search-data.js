@@ -231,7 +231,7 @@ ninja.data = [{
           title: '📜 [Paper] LLM User Simulator Audit Accepted at the NeurIPS 2026 UserSim Workshop...',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/2026-09-30-paper-neurips-usersim-workshop/";
+              window.location.href = "/news/2026-10-23-paper-neurips-usersim-workshop/";
             },},{id: "projects-ai-for-algal-bloom-forecasting",
           title: 'AI for Algal Bloom Forecasting',
           description: "Developing a Trustworthy AI model to predict harmful algal blooms (HABs).",
