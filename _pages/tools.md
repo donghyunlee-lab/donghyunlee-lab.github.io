@@ -31,8 +31,7 @@ nav_order: 6
             or more detections than past seasons, and when the first detection may come.
           </p>
           <p class="text-muted small mb-3">
-            <i class="fas fa-database me-1"></i>
-            Data from WADIS (NIWDC), MAFRA outbreak records, WOAH WAHIS and Open-Meteo.
+            <i class="fas fa-info-circle me-1"></i>
             It does not replace official government announcements.
           </p>
           <a class="btn btn-sm btn-outline-primary" href="https://hpai.kr">Visit dashboard →</a>
