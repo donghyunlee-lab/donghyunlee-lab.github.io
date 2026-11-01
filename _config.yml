@@ -17,6 +17,11 @@ footer_text: >
 keywords: donghyunlee, hufs, donghyunlee-ai # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 💻 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+logo: # lab wordmark and favicon set; master files and build script live outside this repo (2_연구/랩/로고)
+  wordmark: /assets/img/logo/donghyunlee-wordmark-en.svg # navy, light theme
+  wordmark_dark: /assets/img/logo/donghyunlee-wordmark-en-reverse.svg # white, dark theme
+  favicon: true # use /favicon.ico, /favicon.svg and /apple-touch-icon.png instead of the emoji icon
+  version: 20261101 # bump when the icon files change so browsers reload them
 timezone: Asia/Seoul # dates in posts/news are interpreted in this timezone (KST)
 
 url: https://donghyunlee-lab.github.io # the base hostname & protocol for your site

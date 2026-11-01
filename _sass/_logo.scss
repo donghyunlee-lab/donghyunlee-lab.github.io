@@ -1,0 +1,50 @@
+/*******************************************************************************
+ * Lab wordmark in the navbar and the about-page title.
+ * Two images are rendered: the navy one for the light theme and the white one
+ * for the dark theme; only one is shown at a time.
+ ******************************************************************************/
+
+.site-logo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+
+// The navbar is a non-wrapping flex row, so the brand must not shrink to zero width.
+.navbar .navbar-brand.title {
+  flex-shrink: 0;
+}
+
+.navbar-brand .navbar-logo {
+  height: 24px;
+  max-width: none;
+}
+
+.post-title .title-logo {
+  height: 46px;
+  margin: 0.4rem 0 0.2rem;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand .navbar-logo {
+    height: 22px;
+  }
+
+  .post-title .title-logo {
+    height: auto;
+  }
+}
+
+.site-logo.logo-dark {
+  display: none;
+}
+
+html[data-theme="dark"] {
+  .site-logo.logo-light {
+    display: none;
+  }
+
+  .site-logo.logo-dark {
+    display: block;
+  }
+}

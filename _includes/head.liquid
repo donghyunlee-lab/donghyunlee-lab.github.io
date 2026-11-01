@@ -58,7 +58,12 @@
   >
 {% endif %}
 
-{% if site.icon.size <= 4 %}
+{% if site.logo.favicon %}
+  {% comment %} bust_file_cache only reads files under assets/, so the root icons carry a version query {% endcomment %}
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}?v={{ site.logo.version }}" sizes="32x32">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}?v={{ site.logo.version }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}?v={{ site.logo.version }}" sizes="180x180">
+{% elsif site.icon.size <= 4 %}
   <link
     rel="shortcut icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
