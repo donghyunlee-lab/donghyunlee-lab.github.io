@@ -1,50 +1,17 @@
 /*******************************************************************************
- * Lab wordmark in the navbar and the about-page title.
- * Two images are rendered: the navy one for the light theme and the white one
- * for the dark theme; only one is shown at a time.
+ * "AI Group" mark next to the first name in the navbar and the about-page title.
+ * The SVG is sized in em (cap height = the text's cap height) and filled with
+ * currentColor, so it follows the text size and the light/dark text color.
+ * Its box runs from 730 above the baseline to 240 below (cap height 720), so
+ * the bottom edge sits 240/720 x 0.711em = 0.237em under the baseline.
  ******************************************************************************/
 
-.site-logo {
-  display: block;
-  width: auto;
-  max-width: 100%;
-}
+.group-mark {
+  white-space: nowrap;
 
-// The navbar is a non-wrapping flex row, so the brand must not shrink to zero width.
-.navbar .navbar-brand.title {
-  flex-shrink: 0;
-}
-
-.navbar-brand .navbar-logo {
-  height: 24px;
-  max-width: none;
-}
-
-.post-title .title-logo {
-  height: 46px;
-  margin: 0.4rem 0 0.2rem;
-}
-
-@media (max-width: 576px) {
-  .navbar-brand .navbar-logo {
-    height: 22px;
-  }
-
-  .post-title .title-logo {
-    height: auto;
-  }
-}
-
-.site-logo.logo-dark {
-  display: none;
-}
-
-html[data-theme="dark"] {
-  .site-logo.logo-light {
-    display: none;
-  }
-
-  .site-logo.logo-dark {
-    display: block;
+  svg {
+    display: inline-block;
+    vertical-align: -0.237em;
+    overflow: visible;
   }
 }
