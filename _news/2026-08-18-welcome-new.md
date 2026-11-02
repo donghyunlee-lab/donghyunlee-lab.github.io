@@ -7,7 +7,7 @@ inline: false
 
 We are pleased to welcome four new **Undergraduate Researchers** to our lab!
 
-**Yoojeong Chae**, **Wonui Hong**, **Siwon Kim**, and **Jongwon Lee** from the **Division of Social Science & AI Convergence** at **Hankuk University of Foreign Studies** have joined the team. They will be conducting research in **Trustworthy AI** and **Computational Social Science** — from infectious disease forecasting and AI security to urban analytics and mental health. We are excited to have you all on board and look forward to your great work!
+**Yoojeong Chae**, **Wonui Hong**, **Siwon Kim**, and **Jongwon Lee** from the **Division of Social Science & AI** at **Hankuk University of Foreign Studies** have joined the team. They will be conducting research in **Trustworthy AI** and **Computational Social Science** — from infectious disease forecasting and AI security to urban analytics and mental health. We are excited to have you all on board and look forward to your great work!
 
 ---
 

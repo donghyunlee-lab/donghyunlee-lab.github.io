@@ -7,7 +7,7 @@ inline: false
 
 We are excited to welcome two new **Undergraduate Researchers** to our lab!
 
-**Chaewoo Kim** and **Suyeon Seong** from the **Division of Social Science & AI Convergence** at **Hankuk University of Foreign Studies** have joined the team.
+**Chaewoo Kim** and **Suyeon Seong** from the **Division of Social Science & AI** at **Hankuk University of Foreign Studies** have joined the team.
 
 They will be conducting research in the fields of **Agentic AI** and **AI in Social Science**, respectively. We look forward to their passion and valuable contributions to our group.
 
