@@ -4,6 +4,7 @@ M.S. Student, Department of AI Convergence. Presented six papers at KSZ, KEEA, K
 
 **Publications**
 
+- Jeon, H., & Lee, D.\* (2026). From next-action fidelity to rollout validity: A human-grounded audit of LLM user simulators in repeated social interaction. _NeurIPS 2026 Workshop on Grounded User Simulation for Model Evaluation and Training (UserSim)_. Non-archival workshop paper. [Website](https://usersim-workshop.github.io/)
 - Lee, D.\*, & Jeon, H. (2025). Reinforced explainable AI for algal bloom forecasting under climate change: A multi-run class activation mapping (CAM) approach. _Journal of Cleaner Production_, 529, 146805. (SCIE, IF = 10.7 / JCR Top 6.7%) [DOI](https://doi.org/10.1016/j.jclepro.2025.146805)
 
 **Awards**
