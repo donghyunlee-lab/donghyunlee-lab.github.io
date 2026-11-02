@@ -3,37 +3,46 @@ layout: about
 title: Home
 permalink: /
 subtitle: <b>Trustworthy AI for High-Stakes Forecasting and Simulation</b><br>Social Science & AI at HUFS · Seoul, South Korea
-profile:
-  align: right
-  image: portrait.jpg
-  image_circular: false
 social: true
 announcements:
   enabled: true
-  scrollable: true
+  scrollable: false
   limit: 5
 ---
 
-Welcome to the **Donghyun Lee AI Group**. Established in 2017, we are based at Hankuk University of Foreign Studies (HUFS) in Seoul.
-
-We study **when AI predictions and simulations can be trusted — and when they should be withheld** — in high-stakes physical and social systems. Our core program advances forecasting and Physics-AI for spatiotemporal systems under distribution shift, rare events, and imperfect observations. We emphasize calibration, external validation, failure detection, abstention, and decision utility.
-
----
-
-**🔬 Research Areas**
-
-- **Methodological Core — Trustworthy Forecasting & Physics-AI:**
-  Uncertainty quantification, interpretable modeling, regime-shift evaluation, spatial and temporal holdouts, selective prediction, and reusable reliability-audit tools.
-- **Domain I — Environmental & One Health Systems:**
-  Early warning for freshwater CyanoHABs, water-quality risks, and infectious diseases under climate shifts, hydrological change, surveillance bias, and imperfect observations.
-- **Domain II — AI-Based Social & Behavioral Simulation:**
-  Evaluating the validity and reliability of LLM-based synthetic agents through human benchmarks, subgroup fidelity, cross-model sensitivity, and explicit non-use rules.
-
----
-
-**🛠️ Tools**
-
-- **[HPAI Dashboard (hpai.kr)](https://hpai.kr):** avian influenza outbreaks in Korea and worldwide, with our forecasts for wild birds in Korea. More on the [Tools](/tools/) page.
+<div class="home-hero">
+  <div class="home-intro">
+    <p>Welcome to the <strong>Donghyun Lee AI Group</strong>. Established in 2017, we are based at Hankuk University of Foreign Studies (HUFS) in Seoul.</p>
+    <p class="lead mission">We help people and institutions trust AI forecasts and simulated respondents exactly as much as they deserve.</p>
+    <p class="mb-0">AI now forecasts algal blooms and disease outbreaks, and language models answer surveys in place of people. Some answers are right, some are wrong, and users often cannot tell which.</p>
+  </div>
+  <div class="home-portrait">
+    {% include figure.liquid loading="eager" path="assets/img/portrait.jpg" class="img-fluid z-depth-1 rounded" alt="Donghyun Lee" cache_bust=true %}
+  </div>
+  <ol class="pillars" role="list">
+    <li>
+      <span class="pillar-num" aria-hidden="true">1</span>
+      <div>
+        <h2 class="pillar-name">Reliability</h2> <span class="pillar-sub">Check forecasts against real outcomes</span>
+        <p>We test models on new places and years, and find when to hold back.</p>
+      </div>
+    </li>
+    <li>
+      <span class="pillar-num" aria-hidden="true">2</span>
+      <div>
+        <h2 class="pillar-name">Trust</h2> <span class="pillar-sub">How people and agencies respond</span>
+        <p>An algal bloom warning helps only if the water plant acts on it.</p>
+      </div>
+    </li>
+    <li>
+      <span class="pillar-num" aria-hidden="true">3</span>
+      <div>
+        <h2 class="pillar-name">Calibration</h2> <span class="pillar-sub">Trust should match performance</span>
+        <p>Our dashboard <a href="https://hpai.kr">hpai.kr</a> shows how sure each avian influenza forecast is.</p>
+      </div>
+    </li>
+  </ol>
+</div>
 
 ---
 
