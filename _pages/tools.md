@@ -17,7 +17,7 @@ nav_order: 6
       <div class="col-md-5">
         <a href="https://hpai.kr">
           <img src="{{ '/assets/img/tools/hpai-dashboard-en.jpg' | relative_url | bust_file_cache }}" class="img-fluid rounded-start"
-            alt="HPAI Dashboard: map of South Korea showing HPAI detections in wild birds and poultry farms across all seasons">
+            alt="HPAI Dashboard: map of South Korea shaded by the chance of detection in each city and county">
         </a>
       </div>
       <div class="col-md-7">
@@ -27,8 +27,8 @@ nav_order: 6
           <p class="text-secondary mb-3">
             HPAI Dashboard (hpai.kr), run by the Donghyun Lee AI Group, shows highly pathogenic avian
             influenza outbreaks in South Korea and worldwide on maps and season comparisons. For wild
-            birds in Korea, it also shows the chance that this season will have fewer, about the same,
-            or more detections than past seasons, and when the first detection may come.
+            birds in Korea, it also forecasts how many detections this season will have, when the first
+            detection may come, and the chance of detection in each city and county.
           </p>
           <p class="text-muted small mb-3">
             <i class="fas fa-info-circle me-1"></i>
