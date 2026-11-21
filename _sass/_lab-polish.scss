@@ -106,6 +106,9 @@ html[data-theme="dark"] .pagination .page-item.active .page-link {
 .research-intro {
   font-size: 1.1rem;
   line-height: 1.6;
+  // A comfortable line length; keeps the intro at three full lines from 768px up
+  max-width: 46rem;
+  text-wrap: pretty;
 }
 
 .lab-contact-box {
@@ -367,9 +370,9 @@ html[data-theme="dark"] .btn.btn-outline-dark {
   }
 }
 
-// Collapsed menu (below 992px): open the People list inside the menu instead of
-// floating over Research, Publications, News and Teaching.
-@media (max-width: 991.98px) {
+// Collapsed menu (phones, below 576px): open the People list inside the menu
+// instead of floating over Research, Publications, News and Teaching.
+@media (max-width: 575.98px) {
   // MDB pins .navbar .dropdown-menu to position: absolute with !important
   .navbar .navbar-collapse .dropdown-menu {
     position: static !important;
@@ -398,4 +401,34 @@ html[data-theme="dark"] .btn.btn-outline-dark {
 // Research: role after the funder line
 .lab-role {
   color: var(--global-text-color-light);
+}
+
+// Tablets and narrow windows (576-991px): the menu stays open at the top, as
+// before. Where it does not fit beside the logo (about 576-819px on pages other
+// than Home) it moves to a second row instead of being cut off, and the page
+// starts below the bar whatever its height.
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #navbar > .container {
+    flex-wrap: wrap;
+  }
+
+  #navbar .navbar-collapse {
+    flex-grow: 1;
+  }
+
+  // --lab-nav-h is set from the bar's height by a script in header.liquid
+  body.fixed-top-nav {
+    padding-top: var(--lab-nav-h, 56px);
+  }
+
+  [role="main"] {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      scroll-margin-top: calc(var(--lab-nav-h, 56px) + 10px);
+    }
+  }
 }

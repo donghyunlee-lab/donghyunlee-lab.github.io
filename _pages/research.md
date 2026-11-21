@@ -9,9 +9,9 @@ nav_order: 3
 
 <p class="lead research-intro">
   We study AI that forecasts algal blooms and disease outbreaks, and language models that answer
-  surveys in place of people. We ask three questions: does the model hold up on new places
-  and years (<strong>Reliability</strong>), do people and agencies act on what it says
-  (<strong>Trust</strong>), and does their trust match how good it is (<strong>Calibration</strong>)?
+  surveys in place of people. Does a model hold up in new places and years
+  (<strong>Reliability</strong>)? Do people and agencies act on it (<strong>Trust</strong>)? Does
+  their trust match its accuracy (<strong>Calibration</strong>)?
 </p>
 
 <h2 id="projects" class="h3 mt-5 mb-4">Projects</h2>

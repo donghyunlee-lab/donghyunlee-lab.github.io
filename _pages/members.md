@@ -20,7 +20,6 @@ profiles:
       <p><strong>M.S. Student</strong></p>
       <p>Hyeongseo Jeon</p>
       <p>hyeongseo.jeon [at] hufs.ac.kr</p>
-      <p><a href="https://github.com/Jeon-HS4" target="_blank">GitHub: Jeon-HS4</a></p>
 
   - align: left
     image: pic_cwk.jpg
@@ -30,7 +29,6 @@ profiles:
       <p><strong>Undergraduate</strong></p>
       <p>Chaewoo Kim</p>
       <p>kcwkcm [at] hufs.ac.kr</p>
-      <p><a href="https://github.com/hakuna78" target="_blank">GitHub: hakuna78</a></p>
 
   - align: right
     image: pic_yhp.jpeg
@@ -49,7 +47,6 @@ profiles:
       <p><strong>Undergraduate</strong></p>
       <p>Yoojeong Chae</p>
       <p>ujeong601 [at] hufs.ac.kr</p>
-      <p><a href="https://github.com/yoojeongarc" target="_blank">GitHub: yoojeongarc</a></p>
 
   - align: right
     image: pic_wuh.jpg
@@ -59,7 +56,6 @@ profiles:
       <p><strong>Undergraduate</strong></p>
       <p>Wonui Hong</p>
       <p>oneof [at] hufs.ac.kr</p>
-      <p><a href="https://github.com/oneofhufs" target="_blank">GitHub: oneofhufs</a></p>
 
   - align: left
     image: pic_swk.jpg
@@ -69,7 +65,6 @@ profiles:
       <p><strong>Undergraduate</strong></p>
       <p>Siwon Kim</p>
       <p>coolkim [at] hufs.ac.kr</p>
-      <p><a href="https://github.com/siwonkimm" target="_blank">GitHub: siwonkimm</a></p>
 
   - align: right
     image: pic_jwl.jpg
@@ -79,5 +74,4 @@ profiles:
       <p><strong>Undergraduate</strong></p>
       <p>Jongwon Lee</p>
       <p>ljw49533 [at] gmail.com</p>
-      <p><a href="https://github.com/ljw49533-beep" target="_blank">GitHub: ljw49533-beep</a></p>
 ---

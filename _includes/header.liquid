@@ -1,6 +1,6 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
@@ -142,6 +142,21 @@
       </div>
     </div>
   </nav>
+  <script>
+    // The menu bar can take two rows on tablets (576-991px); expose its height so
+    // the page starts below it (used by _lab-polish.scss in that range only).
+    (function () {
+      var nav = document.getElementById('navbar');
+      if (!nav) return;
+      var set = function () {
+        document.documentElement.style.setProperty('--lab-nav-h', nav.offsetHeight + 'px');
+      };
+      set();
+      window.addEventListener('load', set);
+      window.addEventListener('resize', set);
+      if (window.ResizeObserver) new ResizeObserver(set).observe(nav);
+    })();
+  </script>
   {% if site.enable_progressbar %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">
