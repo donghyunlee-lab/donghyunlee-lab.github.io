@@ -40,7 +40,6 @@ profiles:
       <p><strong>Undergraduate</strong></p>
       <p>Yeonhoo Park</p>
       <p>bellnice55 [at] hufs.ac.kr</p>
-      <p><a href="https://github.com/bellnice55" target="_blank">GitHub: bellnice55</a></p>
 
   - align: left
     image: pic_yjc.jpeg
