@@ -30,47 +30,33 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/alumni/";
               },
-            },{id: "nav-publications",
+            },{id: "nav-research",
+          title: "Research",
+          description: "Our research questions, funded projects, the hpai.kr dashboard, and code.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-publications",
           title: "Publications",
           description: "Publications from Donghyun Lee AI Group. Underline indicates group members, and * indicates the corresponding author.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "Overview of research projects, R&amp;D capabilities, and collaborative networks of the Donghyun Lee AI Group.",
+        },{id: "nav-news",
+          title: "News",
+          description: "Talks, awards, papers, and lab events.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-code",
-          title: "Code",
-          description: "Open-source code released alongside our publications for full reproducibility.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/code/";
-          },
-        },{id: "nav-tools",
-          title: "Tools",
-          description: "Tools built and run by the Donghyun Lee AI Group.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/tools/";
+            window.location.href = "/news/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "A list of my online and undergraduate courses.",
+          description: "Online and university courses taught by Prof. Donghyun Lee.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
-          },
-        },{id: "nav-gallery",
-          title: "Gallery",
-          description: "Moments from the Donghyun Lee AI Group — conferences, seminars, awards, and lab life.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/gallery/";
           },
         },{id: "news-presentation-kosime-summer-conference-algal-bloom-mlops",
           title: '🎤 [Presentation] KOSIME Summer Conference (Algal Bloom MLOps)',
@@ -97,8 +83,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2024-10-21-award-kei-contest/";
-            },},{id: "news-award-encouragement-award-at-tuk-sw-competition-hyungseo-jeon",
-          title: '🏆 [Award] Encouragement Award at TUK SW Competition (Hyungseo Jeon)',
+            },},{id: "news-award-encouragement-award-at-tuk-sw-competition-hyeongseo-jeon",
+          title: '🏆 [Award] Encouragement Award at TUK SW Competition (Hyeongseo Jeon)',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2024-11-14-award-sw-contest/";
