@@ -1,0 +1,401 @@
+/*******************************************************************************
+ * Lab-site polish (2026-11-21 UI/UX check).
+ *
+ * - Grey helper text (dates, notes, captions) reaches 4.5:1 in both themes.
+ * - MDB colors .text-secondary purple (#a6c) and .text-primary/.btn-outline-primary
+ *   Google blue (#4285f4). Both fail 4.5:1 as text and clash with the theme color,
+ *   so they now follow the body text and theme colors.
+ * - Publication year headings stay light but readable (3:1 for large text).
+ * - Card badges, the dashboard image column, the research and news layouts,
+ *   member contact boxes and the phone footer.
+ * - Accent color in the lab logo navy (2026-11-21 user decision).
+ ******************************************************************************/
+
+:root {
+  --global-text-color-light: #6b6b6b; // 5.3:1 on white (was #828282, 3.8:1)
+  --lab-year-color: #8f8f8f; // 3.2:1 on white, large text
+  // Accent in the hue of the lab logo navy (#13294B). The logo navy itself is too
+  // close to the black body text for links, so links use a lighter navy.
+  --global-theme-color: #1f4e8c; // 8.3:1 on white
+  --global-hover-color: #1f4e8c;
+  --global-code-bg-color: rgba(31, 78, 140, 0.05);
+}
+
+html[data-theme="dark"] {
+  --global-text-color-light: #9a9a9a; // 5.5:1 on #212529 cards (was 4.0:1)
+  --lab-year-color: #707070; // 3.4:1 on #1c1c1d
+  --global-theme-color: #8fb0e0; // 7.7:1 on #1c1c1d
+  --global-hover-color: #8fb0e0;
+  --global-hover-text-color: #1c1c1d; // white on the light navy would be 2.3:1
+}
+
+// Text placed on an accent background follows the page background, not white
+html[data-theme="dark"] .pagination .page-item.active .page-link {
+  color: var(--global-bg-color);
+}
+
+::highlight(search) {
+  color: var(--global-bg-color);
+}
+
+// Headings that were moved to the right level (h2/h3) keep their old look through
+// .h3/.h4/... classes. MDB draws heading elements at weight 300, Bootstrap's classes
+// at 500, so match the elements. .font-weight-bold (!important) still wins.
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 300;
+}
+
+// MDB color helpers used in page markup
+.text-secondary {
+  color: var(--global-text-color) !important;
+}
+
+.text-primary {
+  color: var(--global-theme-color) !important;
+}
+
+.btn.btn-outline-primary {
+  color: var(--global-theme-color) !important;
+  border: 2px solid var(--global-theme-color) !important;
+  background-color: transparent !important;
+
+  &:hover,
+  &:focus {
+    color: var(--global-bg-color) !important;
+    background-color: var(--global-theme-color) !important;
+  }
+}
+
+// Publications: year headings
+.publications h2.bibliography {
+  color: var(--lab-year-color);
+}
+
+// Small neutral label (languages, licenses) instead of white-on-purple badges
+.badge.lab-tag {
+  color: var(--global-text-color) !important; // MDB sets badge text to white with !important
+  background-color: transparent;
+  border: 1px solid var(--global-divider-color);
+  box-shadow: none;
+  font-weight: 500;
+  padding: 0.3em 0.55em;
+}
+
+// Research: dashboard card image column with even padding so cards of different heights look intended
+.tool-card {
+  .tool-img {
+    padding: 1rem;
+
+    img {
+      border: 1px solid var(--global-divider-color);
+      border-radius: 0.25rem;
+    }
+
+    @media (min-width: 768px) {
+      padding: 1.5rem 0 1.5rem 1.5rem;
+    }
+  }
+}
+
+// Research: intro paragraph and the collaboration box
+.research-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.lab-contact-box {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0.25rem;
+  background-color: var(--global-card-bg-color);
+}
+
+// News: photo grid (moved from the old Gallery page)
+.gallery-card {
+  overflow: hidden;
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .gallery-img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .card-title {
+    color: var(--global-text-color);
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-card,
+  .gallery-card:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+// Members: contact box under each photo in the normal font, one item per line
+.profile .more-info {
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  margin-top: 0.6rem;
+
+  p {
+    display: block;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  p:first-child {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  p:first-child strong {
+    color: inherit;
+    font-weight: 600;
+  }
+
+  p:nth-child(2) {
+    font-weight: 700;
+  }
+}
+
+// Phones: the fixed footer took two lines of the screen on every page; let it sit
+// at the end of the page instead.
+@media (max-width: 575.98px) {
+  footer.fixed-bottom {
+    position: static;
+  }
+
+  body {
+    padding-bottom: 0;
+  }
+}
+
+// Research projects: keep a gap between a long project title and its years
+.list-group-item > .justify-content-between {
+  gap: 1rem;
+
+  small {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+
+// Research projects on phones: years go under the title instead of squeezing beside it
+@media (max-width: 575.98px) {
+  .list-group-item > .justify-content-between {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+// Dark theme: the footer band and the publication filter were light grey boxes
+html[data-theme="dark"] {
+  --global-footer-bg-color: #2a2a2b;
+  --global-footer-text-color: #b0b0b0;
+  --global-footer-link-color: #ffffff;
+
+  .bibsearch-form-input {
+    color: var(--global-text-color);
+    background: var(--global-card-bg-color);
+    border-color: var(--global-divider-color);
+  }
+}
+
+// One button look on cards and page actions: sentence case, no MDB shadow, and
+// outline-dark follows the theme color so it stays visible on dark cards.
+.post .card .btn,
+.post .text-center > .btn {
+  text-transform: none;
+  letter-spacing: 0;
+  box-shadow: none;
+  font-size: 0.875rem;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.btn.btn-outline-dark {
+  color: var(--global-theme-color) !important;
+  border: 2px solid var(--global-theme-color) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  i {
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--global-bg-color) !important;
+    background-color: var(--global-theme-color) !important;
+  }
+}
+
+// The dark-theme fixes give outline-dark a grey border with !important inside
+// html[data-theme="dark"], which outranks the rule above; repeat it there.
+html[data-theme="dark"] .btn.btn-outline-dark {
+  color: var(--global-theme-color) !important;
+  border-color: var(--global-theme-color) !important;
+  background-color: transparent !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--global-bg-color) !important;
+    border-color: var(--global-theme-color) !important;
+    background-color: var(--global-theme-color) !important;
+  }
+}
+
+// Card text at the body weight (MDB sets 400, body is 300)
+.post .card-body {
+  font-weight: 300;
+}
+
+// Bootstrap's bluish .text-muted (#6c757d) -> the site grey
+.post .text-muted {
+  color: var(--global-text-color-light) !important;
+}
+
+// Members: the name is the main line of the contact box
+.profile .more-info p:nth-child(2) {
+  font-size: 1.1rem;
+}
+
+// Navbar: opaque, so the open phone menu does not show the page through it
+.navbar {
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-toggler,
+  #light-toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  // "ctrl k" means nothing on a phone; keep the search icon only
+  #search-toggle .nav-link {
+    font-size: 0;
+
+    .ti {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// Phones: bigger tap targets for small buttons, details toggles and footer links
+@media (max-width: 575.98px) {
+  .publications .links .btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .post .btn-sm {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .post details > summary {
+    padding: 0.6rem 0;
+  }
+
+  footer a {
+    display: inline-block;
+    padding: 0.6rem 0.25rem;
+  }
+}
+
+// Teaching: the "Course Details" toggle sits under the course it belongs to
+.post article > details {
+  margin: -0.5rem 0 1rem 2.5rem;
+  font-size: 0.9rem;
+}
+
+// Home news list: one date column width, no wrapping dates on phones
+.news th[scope="row"] {
+  width: 7.5rem !important;
+  padding-left: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .news tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news th[scope="row"] {
+    width: auto !important;
+  }
+}
+
+// Home: social icons at a size that matches the text around them
+.social .contact-icons {
+  font-size: 2.25rem;
+}
+
+// Menu dropdown: the active item used Bootstrap blue (#007bff, white text 4.0:1).
+// Use the accent with page-background text in both themes.
+.navbar .dropdown-item.active,
+.navbar .dropdown-item:active {
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color) !important;
+
+  &:hover {
+    color: var(--global-bg-color) !important;
+  }
+}
+
+// Collapsed menu (below 992px): open the People list inside the menu instead of
+// floating over Research, Publications, News and Teaching.
+@media (max-width: 991.98px) {
+  // MDB pins .navbar .dropdown-menu to position: absolute with !important
+  .navbar .navbar-collapse .dropdown-menu {
+    position: static !important;
+    float: none;
+    box-shadow: none;
+    border: 0;
+    background-color: transparent;
+  }
+
+  // Sub-items line up with the right-aligned menu, indented one step
+  .navbar .navbar-collapse .dropdown-item {
+    text-align: right;
+    padding-right: 1.5rem;
+  }
+}
+
+// Links inside running text: underline, so they do not depend on color alone
+// (navy vs black text is 2.5:1, WCAG 1.4.1 asks 3:1 or a non-color cue).
+[role="main"] p a:not(.btn):not(.badge),
+[role="main"] li a:not(.btn):not(.badge):not(.dropdown-item) {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+// Research: role after the funder line
+.lab-role {
+  color: var(--global-text-color-light);
+}

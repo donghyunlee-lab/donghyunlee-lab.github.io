@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: Publications from Donghyun Lee AI Group. Underline indicates group members, and * indicates the corresponding author.
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 {% include bib_search.liquid %}

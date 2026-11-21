@@ -2,9 +2,9 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: A list of my online and undergraduate courses.
+description: Online and university courses taught by Prof. Donghyun Lee.
 nav: true
-nav_order: 7
+nav_order: 6
 ---
 
 ## 💻 Online Courses (KOCW)
@@ -19,6 +19,15 @@ nav_order: 7
   R for data analysis: preprocessing, visualization, descriptive statistics, and regression.
 - **[JAVA Programming (Fundamentals of Programming)](http://www.kocw.net/home/search/kemView.do?kemId=1351017)**
   Core programming concepts in Java, with an introduction to object-oriented programming.
+
+<br>
+
+## ⌨️ Practice Site {#practice-site}
+
+---
+
+- **[Python Coding Tests](https://donghyunlee.kr/practice/en/coding-tests/)**
+  Python coding test problems you solve in the browser, with nothing to install. You complete one function, and it is graded on the visible examples and on hidden tests. There is a new problem each day and a timed mock exam. No sign-up: your code and progress stay in your browser.
 
 <br>
 

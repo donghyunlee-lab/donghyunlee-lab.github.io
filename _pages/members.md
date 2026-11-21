@@ -18,7 +18,7 @@ profiles:
     image_circular: false
     more_info: |
       <p><strong>M.S. Student</strong></p>
-      <p>Jeon Hyeongseo</p>
+      <p>Hyeongseo Jeon</p>
       <p>hyeongseo.jeon [at] hufs.ac.kr</p>
       <p><a href="https://github.com/Jeon-HS4" target="_blank">GitHub: Jeon-HS4</a></p>
 

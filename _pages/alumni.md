@@ -5,7 +5,7 @@ permalink: /alumni/
 nav: false
 ---
 
-{% include figure.liquid loading="eager" path="assets/img/posts/post_2025-11-27.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/posts/post_2025-11-27.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Alumni and current students at the 2025 Lab Homecoming Day" %}
 
 - **Sangwon Chae** (Data Analyst, **NH Bank**)
 

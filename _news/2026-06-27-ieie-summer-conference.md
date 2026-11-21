@@ -6,7 +6,7 @@ img: assets/img/posts/post_2026_06_27.jpg
 inline: false
 ---
 
-Our group attended the **2026 Summer Annual Conference of the Institute of Electronics and Information Engineers (IEIE)**. **Hyungseo Jeon** (M.S. student) and **Prof. Donghyun Lee** participated together.
+Our group attended the **2026 Summer Annual Conference of the Institute of Electronics and Information Engineers (IEIE)**. **Hyeongseo Jeon** (M.S. student) and **Prof. Donghyun Lee** participated together.
 
 It was a meaningful and inspiring time. We gained valuable insights into **the future of AI** and **Physical AI**, exploring where the field is heading and how our research can contribute to it.
 

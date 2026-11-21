@@ -7,17 +7,17 @@ first_name: Donghyun Lee
 middle_name:
 last_name: AI Group
 contact_note: |
-  Division of Social Science & AI, Hankuk University of Foreign Studies  
+  Division of Social Science & AI, Hankuk University of Foreign Studies<br>
   107 Imun-ro, Dongdaemun-gu, Seoul 02450, Republic of Korea
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Donghyun Lee AI Group
+description: >- # the ">-" symbol folds the lines below into one line without a trailing newline
+  Donghyun Lee AI Group, Hankuk University of Foreign Studies, Seoul. Trustworthy AI for high-stakes forecasting and simulation: we help people and institutions trust AI forecasts and simulated respondents exactly as much as they deserve.
 footer_text: >
-  Prof. Lee's personal website: <a href="https://donghyunlee.kr">donghyunlee.kr</a>
+  Prof. Lee's personal website: <a href="https://donghyunlee.kr">donghyunlee.kr</a> ·
 
 keywords: donghyunlee, hufs, donghyunlee-ai # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 💻 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-logo: # lab mark and favicon set; master files and build script live outside this repo (2_연구/랩/로고)
+logo: # lab mark and favicon set; master files and build script live outside this repo
   group_mark: true # draw "AI Group" with the hand-drawn mark in _includes/logo/ai-group.svg; first_name stays as text
   favicon: true # use /favicon.ico, /favicon.svg and /apple-touch-icon.png instead of the emoji icon
   version: 20261101 # bump when the icon files change so browsers reload them
@@ -68,9 +68,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: https://donghyunlee-lab.github.io/assets/img/og-lab.png # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -185,6 +185,7 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/members_profile_*.md # read by the members page through include_relative; not pages of their own
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -386,7 +387,7 @@ enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-theme_mode: light # <---- 이 줄을 여기에 추가하세요
+theme_mode: light
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)

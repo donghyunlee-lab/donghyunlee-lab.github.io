@@ -6,7 +6,7 @@ description: How this website handles visitor information.
 nav: false
 ---
 
-<div class="container mt-3">
+<div class="mt-3">
   <p class="text-muted">Effective date: August 24, 2026</p>
 
   <p>
@@ -15,7 +15,7 @@ nav: false
     what information is processed when you visit this site.
   </p>
 
-  <h4 class="mt-4">Website analytics</h4>
+  <h2 class="h4 mt-4">Website analytics</h2>
   <p>
     We use Google Analytics 4 to understand how the site is used and to improve
     its content. Google Analytics collects information such as a randomly
@@ -42,7 +42,7 @@ nav: false
     use of this site in any way.
   </p>
 
-  <h4 class="mt-4">Hosting</h4>
+  <h2 class="h4 mt-4">Hosting</h2>
   <p>
     This site is hosted on GitHub Pages, operated by GitHub, Inc. GitHub may
     log technical information such as visitor IP addresses for security and
@@ -51,7 +51,7 @@ nav: false
     GitHub Privacy Statement</a> for details.
   </p>
 
-  <h4 class="mt-4">Email contact</h4>
+  <h2 class="h4 mt-4">Email contact</h2>
   <p>
     If you contact us by email, we use the information you provide (your
     address, name, affiliation, and message) only to review and respond to your
@@ -59,7 +59,7 @@ nav: false
     message.
   </p>
 
-  <h4 class="mt-4">Contact</h4>
+  <h2 class="h4 mt-4">Contact</h2>
   <p>
     Questions about this notice can be sent to
     <strong>donghyun.lee [at] hufs.ac.kr</strong>.

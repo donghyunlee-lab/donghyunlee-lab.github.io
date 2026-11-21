@@ -72,7 +72,17 @@
   <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
 {% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+{% if page.redirect and page.redirect != true %}
+  <!-- Moved page: point search engines at the new address and keep this one out of the index -->
+  {% assign canonical_target = page.redirect | split: '#' | first %}
+  <link
+    rel="canonical"
+    href="{% if canonical_target contains '://' %}{{ canonical_target }}{% else %}{{ canonical_target | absolute_url }}{% endif %}"
+  >
+  <meta name="robots" content="noindex">
+{% else %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+{% endif %}
 
 {% if site.enable_darkmode %}
   <!-- Dark Mode -->

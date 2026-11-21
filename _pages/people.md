@@ -4,6 +4,7 @@ title: People
 nav: true
 nav_order: 2
 dropdown: true
+sitemap: false
 children:
   - title: Professor
     permalink: /professor/
