@@ -17,11 +17,11 @@ nav_order: 3
 <h2 id="projects" class="h3 mt-5 mb-4">Projects</h2>
 
 <h3 class="h5 text-muted mb-3">Current</h3>
-<div class="list-group mb-4">
+<div class="list-group mb-4 research-projects">
   <div class="list-group-item w-100 flex-column align-items-start p-4">
     <div class="d-flex w-100 justify-content-between">
-      <h4 class="h5 mb-1 font-weight-bold">Ultra-Fast Physics-AI Hybrid Disaster Response Based on MambaFlow Matching</h4>
-      <small class="text-muted">2026 - 2033</small>
+      <h4 class="h5 mb-1 font-weight-bold"><a class="stretched-link" href="{{ '/research/disaster-response/' | relative_url }}">Ultra-Fast Physics-AI Hybrid Disaster Response Based on MambaFlow Matching <span class="rp-arrow" aria-hidden="true">→</span></a></h4>
+      <small class="text-muted">2026 – 2033</small>
     </div>
     <p class="mb-1 mt-2">Development of an ultra-fast, high-reliability physics-AI hybrid disaster response technology based on MambaFlow matching.</p>
     <small class="text-primary"><i class="fas fa-building" aria-hidden="true"></i> Funded by IITP (Institute of Information &amp; Communications Technology Planning &amp; Evaluation)</small>
@@ -30,8 +30,8 @@ nav_order: 3
 
   <div class="list-group-item w-100 flex-column align-items-start p-4">
     <div class="d-flex w-100 justify-content-between">
-      <h4 class="h5 mb-1 font-weight-bold">Physics-AI Integrated Dynamic Graph Meta-Learning for Algal Bloom Prediction</h4>
-      <small class="text-muted">2026 - 2029</small>
+      <h4 class="h5 mb-1 font-weight-bold"><a class="stretched-link" href="{{ '/research/algal-bloom/' | relative_url }}">Physics-AI Integrated Dynamic Graph Meta-Learning for Algal Bloom Prediction <span class="rp-arrow" aria-hidden="true">→</span></a></h4>
+      <small class="text-muted">2026 – 2029</small>
     </div>
     <p class="mb-1 mt-2">Development of physics-AI integrated dynamic graph meta-learning based algal bloom prediction technology for overcoming data scarcity.</p>
     <small class="text-primary"><i class="fas fa-building" aria-hidden="true"></i> Funded by National Research Foundation of Korea (NRF)</small>
@@ -40,21 +40,21 @@ nav_order: 3
 </div>
 
 <h3 class="h5 text-muted mb-3">Completed</h3>
-<div class="list-group">
+<div class="list-group research-projects">
   <div class="list-group-item w-100 flex-column align-items-start p-4">
     <div class="d-flex w-100 justify-content-between">
-      <h4 class="h5 mb-1 font-weight-bold">Wild Bird Avian Influenza Spread Prediction Research (I–III)</h4>
-      <small class="text-muted">2023 - 2026</small>
+      <h4 class="h5 mb-1 font-weight-bold"><a class="stretched-link" href="{{ '/research/wild-bird-avian-influenza/' | relative_url }}">Wild Bird Avian Influenza Spread Prediction Research (I–III) <span class="rp-arrow" aria-hidden="true">→</span></a></h4>
+      <small class="text-muted">2023 – 2026</small>
     </div>
-    <p class="mb-1 mt-2">Developing spatial spread prediction models using machine learning.</p>
+    <p class="mb-1 mt-2">Developed spatial spread prediction models using machine learning.</p>
     <small class="text-primary"><i class="fas fa-building" aria-hidden="true"></i> Funded by National Institute of Wildlife Disease Control and Prevention (NIWDCP)</small>
-    <small class="lab-role"> · Principal Investigator (I–II), Co-Investigator (III)</small>
+    <small class="lab-role"> · Principal Investigator (I–II), Co‑Investigator (III)</small>
   </div>
 
   <div class="list-group-item w-100 flex-column align-items-start p-4">
     <div class="d-flex w-100 justify-content-between">
-      <h4 class="h5 mb-1 font-weight-bold">Simulation of Infectious Disease Prediction Using Transfer Learning Deep Learning</h4>
-      <small class="text-muted">2020 - 2025</small>
+      <h4 class="h5 mb-1 font-weight-bold"><a class="stretched-link" href="{{ '/research/infectious-disease-transfer-learning/' | relative_url }}">Simulation of Infectious Disease Prediction Using Transfer Learning Deep Learning <span class="rp-arrow" aria-hidden="true">→</span></a></h4>
+      <small class="text-muted">2020 – 2025</small>
     </div>
     <p class="mb-1 mt-2">Long-term research on AI-based infectious disease modeling and transfer learning applications.</p>
     <small class="text-primary"><i class="fas fa-building" aria-hidden="true"></i> Funded by National Research Foundation of Korea (NRF)</small>

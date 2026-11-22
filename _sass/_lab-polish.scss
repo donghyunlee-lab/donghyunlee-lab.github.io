@@ -152,33 +152,112 @@ html[data-theme="dark"] .pagination .page-item.active .page-link {
   }
 }
 
-// Members: contact box under each photo in the normal font, one item per line
-.profile .more-info {
-  font-family: inherit;
-  font-size: 0.95rem;
-  line-height: 1.45;
-  margin-top: 0.6rem;
+// Members (11-21): one row per person, photo always on the left at a fixed small
+// size (4:5 crop) so the text, not the photo, sets the row height. Name, role and
+// email sit at the top of the text column instead of under the photo.
+.member-list {
+  border-bottom: 1px solid var(--global-divider-color);
+}
 
-  p {
-    display: block;
-    margin: 0;
-    overflow-wrap: anywhere;
+.member {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-areas:
+    "photo head"
+    "photo text";
+  grid-template-rows: auto 1fr;
+  column-gap: 1.75rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--global-divider-color);
+
+  .member-photo {
+    grid-area: photo;
+
+    figure {
+      margin: 0;
+    }
+
+    img.member-img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: var(--member-img-pos, 50% 25%);
+      border-radius: 0.25rem;
+    }
   }
 
-  p:first-child {
-    color: var(--global-text-color-light);
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+  .member-head {
+    grid-area: head;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+
+    p {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    // The name is an h3 before more_info (role, name, email); hide the copy in more_info
+    .member-name {
+      margin: 0 0 0.1rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    p:nth-of-type(2) {
+      display: none;
+    }
+
+    p:first-of-type {
+      color: var(--global-text-color-light);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+
+      strong {
+        color: inherit;
+        font-weight: 600;
+      }
+    }
+
+    p:nth-of-type(3) {
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+    }
   }
 
-  p:first-child strong {
-    color: inherit;
-    font-weight: 600;
-  }
+  .member-text {
+    grid-area: text;
 
-  p:nth-child(2) {
-    font-weight: 700;
+    > p:first-child {
+      margin-bottom: 0.6rem;
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .member {
+    grid-template-columns: 96px 1fr;
+    grid-template-areas:
+      "photo head"
+      "text text";
+    grid-template-rows: auto auto;
+    column-gap: 1rem;
+    padding: 1.25rem 0;
+
+    .member-head {
+      align-self: center;
+      margin-bottom: 0;
+    }
+
+    .member-text {
+      margin-top: 0.9rem;
+    }
   }
 }
 
@@ -277,11 +356,6 @@ html[data-theme="dark"] .btn.btn-outline-dark {
 // Bootstrap's bluish .text-muted (#6c757d) -> the site grey
 .post .text-muted {
   color: var(--global-text-color-light) !important;
-}
-
-// Members: the name is the main line of the contact box
-.profile .more-info p:nth-child(2) {
-  font-size: 1.1rem;
 }
 
 // Navbar: opaque, so the open phone menu does not show the page through it
@@ -398,6 +472,17 @@ html[data-theme="dark"] .btn.btn-outline-dark {
   text-decoration-thickness: 1px;
 }
 
+// ...but not in navigation lists such as the CV page's table of contents
+[role="main"] nav li a,
+#toc-sidebar li a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 // Research: role after the funder line
 .lab-role {
   color: var(--global-text-color-light);
@@ -431,4 +516,250 @@ html[data-theme="dark"] .btn.btn-outline-dark {
       scroll-margin-top: calc(var(--lab-nav-h, 56px) + 10px);
     }
   }
+}
+
+// Publications: JCR rank label after the journal and year
+.publications .periodical .lab-jcr {
+  font-style: normal;
+  font-size: 0.75rem;
+  margin-left: 0.4rem;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+
+// Research project pages (11-22): navy banner in the logo hue with a faint
+// blueprint grid, a facts row, direction cards, a figure and phases.
+.research-project {
+  .rp-hero {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    padding: 2.25rem 2rem 2rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #183a68; // fallback and contrast reference
+    background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 28px),
+      repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 28px), linear-gradient(135deg, #13294b 0%, #1f4e8c 100%);
+
+    a.rp-back {
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.9rem;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+
+    p.rp-status {
+      display: table; // own line, width of its text
+      color: #fff;
+      margin: 1.25rem 0 0.6rem;
+      padding: 0.15rem 0.6rem;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 1rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .rp-title {
+      color: #fff;
+      font-size: 2.4rem;
+      line-height: 1.15;
+      margin: 0 0 0.6rem;
+    }
+
+    p.rp-full-title {
+      max-width: 46rem;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  }
+
+  .rp-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 1.5rem;
+    margin: 0 0 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+
+    dt {
+      color: var(--global-text-color-light);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    dd {
+      margin: 0.2rem 0 0;
+      line-height: 1.45;
+    }
+  }
+
+  .rp-lead {
+    max-width: 46rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+
+  .rp-directions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.25rem 0 2rem;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 1.1rem 1.2rem;
+      border: 1px solid var(--global-divider-color);
+      border-top: 3px solid var(--global-theme-color);
+      border-radius: 0.25rem;
+      background-color: var(--global-card-bg-color);
+    }
+
+    h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+  }
+
+  .rp-figure {
+    margin: 1.5rem 0 2rem;
+
+    .rp-frame {
+      padding: 0.75rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 0.25rem;
+      background-color: #fff; // published figures are drawn on white
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      color: var(--global-text-color-light);
+      font-size: 0.875rem;
+    }
+  }
+
+  .rp-phases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.25rem 0 2rem;
+    padding: 0;
+    list-style: none;
+    counter-reset: phase;
+
+    li {
+      position: relative;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 0.25rem;
+      background-color: var(--global-card-bg-color);
+    }
+
+    .rp-phase-name {
+      display: block;
+      color: var(--global-theme-color);
+      font-weight: 600;
+    }
+
+    .rp-phase-meta {
+      display: block;
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+    }
+  }
+
+  .rp-footer {
+    margin: 2.5rem 0 1rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .rp-hero {
+      padding: 1.5rem 1.25rem;
+
+      .rp-title {
+        font-size: 1.8rem;
+      }
+    }
+
+    .rp-facts,
+    .rp-directions,
+    .rp-phases {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+html[data-theme="dark"] .research-project .rp-hero {
+  background-color: #12284a;
+  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 28px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 28px), linear-gradient(135deg, #0e1f3a 0%, #1a3f72 100%);
+}
+
+// Research list: each project card opens its page
+.research-projects .list-group-item {
+  transition: box-shadow 0.15s ease-in-out;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+  }
+
+  h4 a {
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+
+  h4 a:hover,
+  h4 a:focus {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+
+  .rp-arrow {
+    color: var(--global-theme-color);
+    white-space: nowrap;
+  }
+}
+
+// Keyboard focus: buttons lost the MDB shadow (which was also the focus ring)
+.btn:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+}
+
+// CV table of contents: on phones the hidden list faded out over the first card
+// for ~0.2s per link and caught taps (MDB animates all link properties)
+nav[data-toggle="toc"] a {
+  transition: none;
+}
+
+// Project pages: note under the publications heading
+.research-project .rp-note {
+  color: var(--global-text-color-light);
+  font-size: 0.875rem;
 }

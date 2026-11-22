@@ -6,7 +6,8 @@
     "email": "donghyun.lee [at] hufs.ac.kr",
     "phone": "+82-2-2173-3054",
     "url": "https://donghyunlee.kr/",
-    "interests": "Trustworthy AI, AI in Social Science, Technology Management",
+    "interests": "Trustworthy AI, Computational Social Science",
+    "summary": "Studies how much people and institutions should trust AI forecasts of infectious disease and the environment, and LLM-simulated survey respondents.",
     "location": {
       "address": "107, Imun-ro, Dongdaemun-gu",
       "postalCode": "02450",
@@ -429,13 +430,8 @@
       "keywords": []
     },
     {
-      "name": "AI in Social Science",
+      "name": "Computational Social Science",
       "icon": "fa-solid fa-users",
-      "keywords": []
-    },
-    {
-      "name": "Technology Management",
-      "icon": "fa-solid fa-microchip",
       "keywords": []
     }
   ],

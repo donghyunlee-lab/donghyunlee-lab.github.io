@@ -14,6 +14,7 @@ profiles_heading: Current Members
 profiles:
   - align: right
     image: pic_hsj.jpg
+    image_position: 72% 50%
     content: members_profile_hsj.md
     image_circular: false
     more_info: |

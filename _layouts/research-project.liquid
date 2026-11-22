@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="post research-project">
+  <header class="rp-hero">
+    <a class="rp-back" href="{{ '/research/#projects' | relative_url }}">&larr; Research</a>
+    <p class="rp-status">{{ page.status }} project</p>
+    <h1 class="post-title rp-title">{{ page.title }}</h1>
+    <p class="rp-full-title">{{ page.full_title }}</p>
+  </header>
+
+  <dl class="rp-facts">
+    <div>
+      <dt>Period</dt>
+      <dd>{{ page.period }}</dd>
+    </div>
+    <div>
+      <dt>Funder</dt>
+      <dd>{{ page.funder }}</dd>
+    </div>
+    <div>
+      <dt>Role</dt>
+      <dd>{{ page.role }}</dd>
+    </div>
+  </dl>
+
+  <article class="rp-body">
+    {{ content }}
+  </article>
+
+  {% if page.related_publications %}
+    <h2 class="h3 mt-5 mb-2">{{ page.references_heading | default: 'Publications' }}</h2>
+    <p class="rp-note">Underline marks group members; * marks the corresponding author.</p>
+    <div class="publications">
+      {% bibliography --cited_in_order --group_by none %}
+    </div>
+  {% endif %}
+
+  <p class="rp-footer">
+    <a href="{{ '/research/#projects' | relative_url }}">&larr; All projects</a>
+  </p>
+</div>

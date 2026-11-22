@@ -38,7 +38,7 @@
             class="preview z-depth-1 rounded"
             zoomable=true
             avoid_scaling=true
-            alt=entry.preview
+            alt=""
           %}
         {% endif %}
       {% endif %}
@@ -180,6 +180,13 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
+      {% if entry.jcr %}
+        <span
+          class="badge lab-tag lab-jcr"
+          title="Journal Citation Reports category rank{% if entry.jcr_year %}, {{ entry.jcr_year }} edition{% else %}, most recent edition{% endif %}"
+          >JCR Top {{ entry.jcr }}%{% if entry.jcr_year %} ({{ entry.jcr_year }}){% endif -%}
+        </span>
+      {% endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
