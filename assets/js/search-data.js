@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Publications from Donghyun Lee AI Group. Underline indicates group members, and * indicates the corresponding author.",
+          description: "Publications from Donghyun Lee AI Group. Underline indicates group members, and * indicates the corresponding author. JCR Top % is the journal&#39;s rank in its subject category in the latest Journal Citation Reports; a year in parentheses gives the edition at publication.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
