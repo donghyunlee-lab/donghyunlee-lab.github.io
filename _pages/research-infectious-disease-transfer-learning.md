@@ -10,19 +10,18 @@ funder: National Research Foundation of Korea (NRF)
 role: Principal Investigator
 nav: false
 related_publications: true
-references_heading: Related and earlier work
+references_heading: Papers supported by this grant
 ---
 
 <p class="rp-lead">
-  A forecasting model trained on one place's outbreak records often has too little to learn from.
-  This five-year project studied transfer learning for infectious disease: a model first learns
-  from other data, then adapts to the place it has to forecast.
+  This five-year project studied deep learning models of infectious disease that use transfer
+  learning: a model first learns from other data, then adapts to the place it has to forecast.
 </p>
 
 <figure class="rp-figure">
-  <div class="rp-frame"><img src="{{ '/assets/img/publication_preview/lee2026heterogeneous.png' | relative_url }}" loading="lazy"
-    alt="World map of cumulative COVID-19 cases in the 30 countries used to test transfer learning"></div>
-  <figcaption>Related work: COVID-19 records from 30 countries used to test which source countries help a forecast most (Lee, 2026, <em>Expert Systems with Applications</em>, Figure 1).</figcaption>
+  <div class="rp-frame"><img src="{{ '/assets/img/publication_preview/lee2024building.png' | relative_url }}" loading="lazy"
+    alt="Graphical abstract: air quality and weather data on a grid feed a convolutional network with Monte Carlo dropout, which outputs particulate matter forecasts with 95% intervals and uncertainty maps"></div>
+  <figcaption>Particulate matter forecasts that report their own uncertainty (Lee &amp; Lee, 2024, <em>Journal of Cleaner Production</em>).</figcaption>
 </figure>
 
-{% nocite lee2026heterogeneous chae2018predicting %}
+{% nocite lee2022integrated lee2024building %}
