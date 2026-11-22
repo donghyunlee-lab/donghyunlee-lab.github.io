@@ -18,10 +18,4 @@ references_heading: Papers supported by this grant
   learning: a model first learns from other data, then adapts to the place it has to forecast.
 </p>
 
-<figure class="rp-figure">
-  <div class="rp-frame"><img src="{{ '/assets/img/publication_preview/lee2024building.png' | relative_url }}" loading="lazy"
-    alt="Graphical abstract: air quality and weather data on a grid feed a convolutional network with Monte Carlo dropout, which outputs particulate matter forecasts with 95% intervals and uncertainty maps"></div>
-  <figcaption>Particulate matter forecasts that report their own uncertainty (Lee &amp; Lee, 2024, <em>Journal of Cleaner Production</em>).</figcaption>
-</figure>
-
 {% nocite lee2022integrated lee2024building %}
