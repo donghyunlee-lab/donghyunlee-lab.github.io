@@ -104,6 +104,55 @@ nav_order: 3
 <div class="card mb-4 z-depth-1">
   <div class="card-body p-4">
     <div class="d-flex justify-content-between align-items-start flex-wrap">
+      <h3 class="h4 font-weight-bold mb-2">Hybrid Chlorophyll-a Forecast</h3>
+      <span class="badge lab-tag align-self-center mb-2">MIT · CC BY 4.0</span>
+    </div>
+
+    <p class="mb-3">
+      Code, daily monitoring data, and result tables for <em>"Hard constraints
+      make an accurate hybrid chlorophyll-a forecast interpretable: a process
+      equation with an xLSTM correction."</em> Across 27 monitoring stations in
+      South Korea's four major river basins (2024–2025), the model embeds a
+      five-constant Gompertz-type process equation in ln Chl-a inside physical
+      intervals, adds a bounded cross-basin xLSTM daily correction, and
+      evaluates 1, 3, 7, and 14-day forecasts against 21 other single models and
+      a six-model mean. Every forecast splits into exact additive process terms,
+      and scripts support three reproducibility levels from rebuilding all paper
+      tables and figures on CPU to full retraining.
+    </p>
+
+    <p class="text-muted small mb-3">
+      <i class="fas fa-database mr-1" aria-hidden="true"></i>
+      Ships compiled daily water-quality and algae-alert observations from
+      Korea's Water Environment Information System
+      (<a href="https://water.nier.go.kr" target="_blank" rel="noopener">water.nier.go.kr</a>,
+      NIER) and daily ERA5 weather series via Open-Meteo
+      (<a href="https://open-meteo.com" target="_blank" rel="noopener">open-meteo.com</a>);
+      saved forecasts and model files (about 730 MB) are archived on Zenodo, and
+      GIS shapefiles for Figure 1 are obtained from their providers.
+    </p>
+
+    <a href="https://github.com/donghyunlee-lab/chla-hybrid-forecast"
+       class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener">
+      <i class="fab fa-github mr-1" aria-hidden="true"></i> View on GitHub
+    </a>
+    <a href="https://doi.org/10.5281/zenodo.24470518"
+       class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener">
+      <i class="ai ai-doi mr-1" aria-hidden="true"></i> Zenodo archive
+    </a>
+
+    <p class="text-muted small mt-3 mb-0">
+      <i class="fas fa-hand-holding-usd mr-1" aria-hidden="true"></i>
+      Supported by IITP (RS-2026-25522834, Physics-AI Hybrid Disaster Response
+      Technology).
+    </p>
+
+  </div>
+</div>
+
+<div class="card mb-4 z-depth-1">
+  <div class="card-body p-4">
+    <div class="d-flex justify-content-between align-items-start flex-wrap">
       <h3 class="h4 font-weight-bold mb-2">Synthetic-Panel Audit</h3>
       <span class="badge lab-tag align-self-center mb-2">Apache-2.0 · CC BY 4.0</span>
     </div>
